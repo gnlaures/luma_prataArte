@@ -1,0 +1,68 @@
+@mixin paragrafos($tc: $text, $fw: $fwMedium, $fs: 12px, $lh: 1.1, $ta: left, $mb: 15px, $mbLOT: 0) {
+    color: $tc;
+    font-size: $fs;
+    font-weight: $fw;
+    margin-bottom: $mb;
+    line-height: $lh;
+    text-align: $ta;
+    &:last-of-type {
+        margin-bottom: $mbLOT;
+    }
+    a {
+        color: $tc;
+        font-size: $fs;
+        font-weight: $fw;
+        line-height: $lh;
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    strong {
+        font-weight: $fwBold;
+        color: $tc;
+        font-size: $fs;
+        line-height: $lh;
+    }
+    @media screen and (max-width: 430px) {
+        font-size: $fs - 1;
+        a, strong {
+            font-size: $fs - 1;
+        }
+    }
+}
+
+@mixin uppercaseSmallTexts($tc: $text) {
+    font-size: 10px;
+    color: $tc;
+    text-transform: uppercase;
+    font-weight: $fwMedium;
+}
+
+@mixin h1_home() {
+    color: $text;
+    font-weight: $fwThin;
+    font-size: 54px;
+    line-height: 0.9;
+    display: block;
+    text-align: left
+}
+@mixin h1_inner() {
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $text;
+    font-weight: $fwThin;
+    span {
+        color: $primary;
+        font-weight: $fwThin;
+    }
+}
+
+@mixin square($bg: $primary, $size: 12px) {
+    width: $size;
+    height: $size;
+    background: $bg;
+    display: block;
+    position: absolute;
+}
