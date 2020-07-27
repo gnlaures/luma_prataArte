@@ -281,6 +281,37 @@
         }
     }
 }
+.c-search {
+    display: block;
+    width: 100%;
+    position: relative;
+    input {
+        @include uppercaseSmallTexts($black);
+        @include transition();
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid $primary;
+        height: 30px;
+        line-height: 30px;
+        padding-right: 30px;
+        @include placeholder {
+            @include uppercaseSmallTexts();
+        }
+        &:focus {
+            border-bottom: 1px solid $primaryDark;
+        }
+    }
+    button {
+        display: block;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        background: red;
+        cursor: pointer;
+    }
+}
 
 // hamburguer menu
 .c-hamburguer {

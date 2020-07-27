@@ -6,7 +6,7 @@ body {
 
 // .
 .u-maxRow {
-	padding-top: 94px;
+	padding-top: 144px;
 }
 
 // l-
@@ -16,25 +16,114 @@ body {
 	width: 100%;
 	max-width: $maxRowWidth;
 	margin: 0 auto;
-	padding: 20px 0;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	background: $primaryDark;
+	background: $white;
 	z-index: 10;
-	.u-containerFlex {
-		flex-wrap: wrap;
-	}
+	border-top: 6px solid $primary;
 	
+	&__primary {
+		display: block;
+		width: 100%;
+		padding: 40px 0 10px 0;
+	}
 	&__brand {
-		@include flexWidth(200px);
+		width: 100%;
 		display: block;
 		a, img {
 			display: block;
 			width: 100%;
+			max-width: 200px;
+			margin: 0 auto;
 		}
 	}
+	
+	&__secondary {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding: 15px 80px 15px 0;
+	}
+	&__support {
+		margin-right: 15%;
+		.c-subMenu__call {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			.icons {
+				@include flexWidth(90px);
+				background: $primary;
+				height: 36px;
+			}
+			.caption {
+				@include uppercaseSmallTexts();
+				padding-left: 10px;
+				text-align: left;
+			}
+			&:hovere {
+				.icons {
+					background: $primaryDark;
+				}
+			}
+		}
+	}
+	&__categoriesMenu {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		li {
+			min-height: 34px;
+			display: block;
+			> a {
+				@include uppercaseSmallTexts($black);
+				display: block;
+				padding: 10px;
+				border-bottom: 2px solid transparent;
+				cursor: pointer;
+				white-space: nowrap;
+				&:hover {
+					border-bottom: 2px solid $primary;
+				}
+			}
+		}
+	}
+	&__search {
+		@include flexWidth(190px);
+	}
+	&__userAcc {
+		.userOff {
+			a {
+				@include transition();
+				@include uppercaseSmallTexts($black);
+				display: block;
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+		.userOn {
+			display: none;
+		}
+	}
+	&__cart {
+		position: absolute;
+		top: 0;
+		right: 15px;
+		display: block;
+		height: 100%;
+		width: 47px;
+		background: $primary;
+	}
+	
+	
+	
+	
+	
+	
 	&__contentHero {
 		@include scroll();
 		flex: 1 1 auto;
@@ -115,6 +204,30 @@ body {
 .l-footer {
 	background: $mutedGray;
 	padding: 30px 0;
+}
+.l-headerHome {
+	display: block;
+	position: relative;
+	img {
+		display: block;
+		width: 100%;
+		min-height: 405px;
+		object-fit: cover;
+		object-position: center;
+	}
+	.u-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		height: 100%;
+		align-items: center;
+	}
+	h1 {
+		@include h1_home();
+		max-width: 350px;
+	}
 }
 
 // s-
