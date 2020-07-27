@@ -1,3 +1,6 @@
 <header class="l-headerHome">
-	header home
+	<img src="media/img/content/home_header_1.jpg" alt="new collection summer dream">
+	<div class="u-container">
+		<h1>new collection summer dream</h1>
+	</div>
 </header>
