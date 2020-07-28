@@ -1,6 +1,28 @@
 // l-nav
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1630px) {
+    .l-nav__support {
+        margin-right: 5%;
+    }
+}
+@media screen and (max-width: 1420px) {
+    .l-nav__support {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .l-nav__support .c-subMenu__call .caption {
+        display: none;
+    }
+}
+@media screen and (max-width: 1130px) {
     .l-nav {
+        background: $white2;
+        .c-hamburguer {
+            display: block;
+        }
+        &__primary {
+            padding-top: 20px;
+        }
         &__contentHero {
             @include transition();
             overflow-x: hidden;
@@ -9,146 +31,76 @@
             background: $white;
             height: 100vh;
             position: fixed;
-            right: -300px;
+            left: -300px;
             top: 0;
             width: 260px;
             max-width: 100%;
             padding-bottom: 70px;
             &.is-active {
-                right: 0;
+                left: 0;
             }
         }
-        &__menu {
-            border-bottom: 1px solid $mutedGray;
-            padding: 10px 0;
-            background: $white;
-            > li, > li a {
+        
+        &__secondary {
+            padding-right: 15px;
+            padding-left: 15px;
+            flex-wrap: wrap;
+        }
+        &__search {
+            @include flexWidth(100%);
+            order: 1;
+            .c-search {
                 width: 100%;
-                display: block;
-                text-align: right;
-            }
-            > li a {
-                padding: 10px 20px;
-                color: $text;
-            }
-        }
-        &__social {
-            padding: 20px;
-            border-bottom: 1px solid $mutedGray;
-            .c-socialList {
-                justify-content: flex-end;
+                max-width: 500px;
+                margin: 0 auto;
+                input {
+                    padding: 0 15px;
+                    padding-right: 40px;
+                    border-bottom: 0;
+                }
+                button {
+                    right: 15px;
+                }
             }
         }
-        &__cta {
-            padding: 20px;
-            .c-btn,
-            .c-btnWithIcon {
-                max-width: 100%;
-            }
+        &__categoriesMenu {
+            @include flexWidth(100%);
+            order: 2;
+            justify-content: center;
+            margin-top: 10px;
         }
-        
-        &__showOnlyInResponsive {
-            display: flex;
-            flex-direction: row;
+        &__cart {
+            padding: 0;
             align-items: center;
-            justify-content: flex-end;
-            padding-right: 45px;
-            flex: 1 1 auto;
-            .l-nav__cta {
+            height: 20px;
+            width: 30px;
+            top: 21px;
+            background-color: transparent;
+            .c-subMenu__call {
+                width: 100%;
+                margin-bottom: 0;
                 padding: 0;
-            }
-        }
-    
-        &__maskMenu.maskAll,
-        &__maskMenu.maskMenu {
-            background: rgba(0,0,0,0.75);
-            &.maskMenu {
-                display: none;
-            }
-        }
-        
-        .c-hamburguer {
-            display: block;
-            &.is-active {
-                margin-top: -25px;
-                right: 270px;
-            }
-        }
-        
-        .c-subMenu {
-            .c-subMenu__mask {
-                display: none !important;
-            }
-            > .c-subMenu__call {
-                text-align: right;
-                padding-right: 45px;
+                height: 20px;
                 &:after {
-                    @include transforms(translateY(50%), center);
-                    left: inherit;
-                    right: 20px;
-                    bottom: 50%;
-                }
-            }
-            > .c-subMenu__content {
-                overflow-y: hidden;
-                max-height: 0;
-                position: relative;
-                top: 0;
-                padding: 0 10px;
-            }
-            
-            &.is-active {
-                > .c-subMenu__call {
-                    &:after {
-                        @include transforms(translateY(50%) rotate(180deg), center);
-                    }
-                }
-                > .c-subMenu__content {
-                    overflow-y: auto;
-                    top: 0;
-                    padding: 10px;
-                    max-height: 2500px;
-                }
-            }
-            
-            .c-subMenu {
-                .c-subMenu__call {
-                    padding-right: 35px;
-                    &:after {
-                        right: 10px;
-                    }
+                    display: none;
                 }
             }
         }
-    }
-}
-@media screen and (max-width: 780px) {
-    .u-maxRow {
-        padding-top: 74px;
-    }
-    .l-nav {
-        padding: 10px 0;
-        &__brand {
-            @include flexWidth(175px);
-        }
-        .c-hamburguer {
-            &.is-active {
-                margin-top: 5px;
-            }
-        }
-        &.scrolled {
-            .c-hamburguer {
-                &.is-active {
-                    margin-top: 10px;
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 500px) {
-    .l-nav {
-        &__showOnlyInResponsive {
+        
+        &__support,
+        &__userAcc{
             display: none;
         }
     }
 }
+@media screen and (max-width: 720px) {
+    .l-nav__categoriesMenu {
+        @include scroll($size: 2px, $bg: $white2, $bar: $mutedGray);
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: space-between;
+    }
+}
+
+
+

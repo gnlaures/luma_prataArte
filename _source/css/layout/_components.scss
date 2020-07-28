@@ -8,7 +8,6 @@
     overflow: hidden;
     width: 100%;
     &__feedback {
-        @include roundedAll($radius: 5px);
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -172,7 +171,6 @@
                 margin-bottom: 0;
             }
             input {
-                @include roundedAll(4px);
                 @include flexWidth(24px);
                 display: block;
                 padding: 0;
@@ -207,7 +205,6 @@
                 margin-bottom: 0;
             }
             input {
-                @include roundedAll(12px);
                 @include flexWidth(24px);
                 display: block;
                 padding: 0;
@@ -293,7 +290,7 @@
         border-bottom: 1px solid $primary;
         height: 30px;
         line-height: 30px;
-        padding-right: 30px;
+        padding-right: 20px;
         @include placeholder {
             @include uppercaseSmallTexts();
         }
@@ -308,18 +305,19 @@
         position: absolute;
         right: 0;
         bottom: 10px;
-        background: red;
+        background: url(#{$media_icons}icon_Search.png);
+        background-repeat: no-repeat;
+        background-position: center;
         cursor: pointer;
     }
 }
 
 // hamburguer menu
 .c-hamburguer {
-    @include transforms(translateY(-50%), center);
     display: none;
     position: absolute;
-    right: 15px;
-    top: 50%;
+    left: 15px;
+    top: 20px;
     z-index: 4;
     .c-hamburguer__hero {
         @include transforms($property: rotate(0deg));
@@ -331,7 +329,6 @@
         width: 30px;
         .bar {
             @extend .u-showElement;
-            @include roundedAll(1px);
             @include transforms($property: rotate(0deg));
             @include transition();
             background: $mutedGray;
@@ -356,7 +353,6 @@
     &.is-active {
         margin-top: -10px;
         right: 15px;
-        @include roundedAll(20px);
         .c-hamburguer__hero {
             @include transforms($property: rotate(180deg) scale(0.8));
             .bar {
@@ -756,10 +752,10 @@ $c_btnIcon_maxWidth: 220px;
     > .c-subMenu__content {
         @include transition();
         @include scroll();
-        @include calc(max-height, 100vh, '-', 300px);
+        @include calc(max-height, 100vh, '-', 200px);
         @include u-hideElement;
         @include transforms(translateX(-50%), center);
-        border: 1px solid $lightGray;
+        border: 1px solid $primaryDark;
         overflow-y: auto;
         overflow-x: hidden;
         display: block;
@@ -767,18 +763,17 @@ $c_btnIcon_maxWidth: 220px;
         position: absolute;
         top: 80px;
         left: 50%;
-        background: $white;
+        background: $primary;
         padding: 10px;
-        z-index: 2;
+        z-index: 20;
         ul li {
             a {
-                @include roundedAll();
                 @include transition();
                 display: block;
                 padding: 10px;
-                color: $text;
+                color: $white;
                 &:hover {
-                    background: $mutedGray;
+                    background: $primaryLight;
                 }
             }
         }
@@ -796,7 +791,7 @@ $c_btnIcon_maxWidth: 220px;
     
     // sub menu level 1 ativo
     &.is-active {
-        z-index: 3;
+        z-index: 21;
         > .c-subMenu__call {
             &:after {
                 @include transforms(rotate(180deg), center);
@@ -813,7 +808,6 @@ $c_btnIcon_maxWidth: 220px;
     
     // sub level 2
     .c-subMenu {
-        @include roundedAll();
         border: 1px solid transparent;
         margin-bottom: 0;
         > .c-subMenu__call {
@@ -955,7 +949,6 @@ $c_btnIcon_maxWidth: 220px;
     &.--rounded {
         a {
             @include transition();
-            @include roundedAll(50%);
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -1042,6 +1035,133 @@ $c_btnIcon_maxWidth: 220px;
                     }
                 }
             }
+        }
+    }
+}
+.c-cart {
+    display: block;
+    position: relative;
+    padding: 30px 20px;
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        span {
+            @include uppercaseSmallTexts($white);
+            padding-right: 15px;
+        }
+        i {
+            @include uppercaseSmallTexts($white);
+            font-weight: $fwBold;
+            font-style: normal;
+        }
+    }
+    &__item {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        > div {
+            @include uppercaseSmallTexts($black, 12px);
+        }
+        .item__qtf {
+            @include flexWidth(30px);
+        }
+        .item__title {
+            flex: 1 1 auto;
+            border-left: 1px solid $black;
+            padding-left: 20px;
+        }
+        .item__price {
+            @include flexWidth(100px);
+            font-size: 15px;
+            text-align: right;
+        }
+        .item__remove {
+            @include flexWidth(30px);
+            @include opacity(0.4);
+            cursor: pointer;
+            color: #ff0000;
+            text-align: right;
+            font-weight: $fwBold;
+        }
+    }
+    &__total {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 40px;
+        padding-left: 50px;
+        padding-right: 30px;
+        .total__caption,
+        .total__price {
+            @include uppercaseSmallTexts($black, 12px);
+        }
+        .total__price {
+            font-size: 15px;
+            text-align: right;
+        }
+        .total__btn {
+            @include flexWidth(100%);
+            margin-top: 15px;
+            .c-btn {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+.c-listSupport {
+    display: block;
+    width: 100%;
+    padding: 25px;
+    background: $primary;
+    span.caption {
+        display: block;
+        width: 100%;
+        @include opacity(0.5);
+        font-weight: $fwMedium;
+        font-size: 13px;
+        color: $black;
+    }
+    > li {
+        display: block;
+        margin-bottom: 10px;
+        > a {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            flex-wrap: nowrap !important;
+            width: 100%;
+            i {
+                @include flexWidth(16px);
+                height: 16px;
+                display: block;
+                img {
+                    object-fit: contain;
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            span {
+                padding-left: 5px;
+            }
+            &:hover {
+                background: $primaryLight !important;
+            }
+        }
+        &.timeSupport {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
         }
     }
 }
@@ -1234,3 +1354,5 @@ $c_btnIcon_maxWidth: 220px;
     // ref, price, select, button, secure, wishlist, tingsize
     // config rings (part 2), close
 }
+
+// general

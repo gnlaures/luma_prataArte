@@ -6,7 +6,7 @@ body {
 
 // .
 .u-maxRow {
-	padding-top: 144px;
+	padding-top: 133px;
 }
 
 // l-
@@ -23,8 +23,10 @@ body {
 	background: $white;
 	z-index: 10;
 	border-top: 6px solid $primary;
+	border-bottom: 1px solid transparent;
 	
 	&__primary {
+		@include transition();
 		display: block;
 		width: 100%;
 		padding: 40px 0 10px 0;
@@ -41,11 +43,12 @@ body {
 	}
 	
 	&__secondary {
+		@include transition();
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		padding: 15px 80px 15px 0;
+		padding: 10px 80px 10px 0;
 	}
 	&__support {
 		margin-right: 15%;
@@ -57,17 +60,73 @@ body {
 				@include flexWidth(90px);
 				background: $primary;
 				height: 36px;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-between;
+				padding: 0 15px 0 20px;
+				i {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 17px;
+					height: 13px;
+					svg {
+						display: block;
+						width: 17px;
+						height: 13px;
+						path {
+							fill: $black;
+						}
+					}
+				}
 			}
 			.caption {
 				@include uppercaseSmallTexts();
 				padding-left: 10px;
 				text-align: left;
 			}
-			&:hovere {
+			&:hover {
 				.icons {
 					background: $primaryDark;
 				}
 			}
+			&:after {
+				display: none;
+			}
+		}
+		.c-subMenu__content {
+			@include transforms(translateX(0), center);
+			padding: 0;
+			left: 0;
+			width: 205px;
+			border: 0;
+		}
+		.c-subMenu {
+			&.is-active {
+				.c-subMenu__content {
+					top: 0;
+				}
+			}
+		}
+		.support__close {
+			width: 20px;
+			height: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: 20px;
+			right: 25px;
+			cursor: pointer;
+			img {
+				display: block;
+				width: 10px;
+				height: 10px;
+			}
+		}
+		.c-listSupport {
+			padding-top: 55px;
 		}
 	}
 	&__categoriesMenu {
@@ -89,6 +148,11 @@ body {
 					border-bottom: 2px solid $primary;
 				}
 			}
+			.c-subMenu__call {
+				&:after {
+					display: none;
+				}
+			}
 		}
 	}
 	&__search {
@@ -96,6 +160,7 @@ body {
 	}
 	&__userAcc {
 		.userOff {
+			display: none;
 			a {
 				@include transition();
 				@include uppercaseSmallTexts($black);
@@ -106,22 +171,60 @@ body {
 			}
 		}
 		.userOn {
-			display: none;
+			.c-subMenu__call {
+				@include uppercaseSmallTexts($black);
+				white-space: nowrap;
+				color: $primary;
+				&:after {
+					display: none;
+				}
+			}
+			.c-subMenu {
+				&.is-active {
+					.c-subMenu__content {
+						top: 36px;
+					}
+				}
+			}
 		}
 	}
 	&__cart {
 		position: absolute;
 		top: 0;
 		right: 15px;
-		display: block;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		justify-content: center;
 		height: 100%;
 		width: 47px;
+		padding-bottom: 20px;
 		background: $primary;
+		.c-subMenu__call {
+			width: 40px;
+			height: 35px;
+			padding: 10px;
+			padding-bottom: 5px;
+			> span {
+				display: block;
+				width: 20px;
+				height: 20px;
+				img {
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+		.c-subMenu__content {
+			@include transforms(translateX(0), center);
+			left: inherit;
+			right: -3px;
+			background: $primary;
+			border: 0;
+			padding: 0;
+			width: 370px;
+		}
 	}
-	
-	
-	
-	
 	
 	
 	&__contentHero {
@@ -134,36 +237,6 @@ body {
 		align-items: center;
 		position: relative;
 		z-index: 3;
-	}
-	&__menu {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		position: relative;
-		z-index: 2;
-		> li {
-			display: block;
-			position: relative;
-			a {
-				color: $white;
-				cursor: pointer;
-				padding: 0 15px;
-				&:hover {
-					color: $secondary;
-				}
-			}
-		}
-	}
-	&__social {
-		display: block;
-		padding-left: 15px;
-	}
-	&__cta {
-		padding-left: 30px;
-	}
-	
-	&__showOnlyInResponsive {
-		display: none;
 	}
 	
 	&__maskMenu {
@@ -179,7 +252,7 @@ body {
 			height: 100%;
 			min-height: 100vh;
 			display: block;
-			background: rgba(0,0,0,0.15);
+			background: rgba(0,0,0,0.5);
 			&.is-active {
 				@include u-showElement();
 			}
@@ -193,7 +266,16 @@ body {
 		top: -300px;
 	}
 	&.scrolled {
-		padding: 5px 0;
+		border-bottom: 1px solid $mutedGray;
+		border-top: 3px solid $primary;
+		.l-nav__primary {
+			padding-top: 10px;
+			padding-bottom: 0;
+		}
+		.l-nav__secondary {
+			padding-top: 5px;
+			padding-bottom: 0;
+		}
 		.c-hamburguer {
 			&.is-active {
 				margin-top: 5px;
@@ -225,8 +307,19 @@ body {
 		align-items: center;
 	}
 	h1 {
-		@include h1_home();
+		@include h1_home($black);
 		max-width: 350px;
+		position: relative;
+		&:after {
+			content: '';
+			display: block;
+			width: 60px;
+			height: 4px;
+			position: absolute;
+			left: 0;
+			bottom: -20px;
+			background: $black;
+		}
 	}
 }
 

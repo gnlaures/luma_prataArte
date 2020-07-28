@@ -32,15 +32,15 @@
     }
 }
 
-@mixin uppercaseSmallTexts($tc: $text) {
-    font-size: 10px;
+@mixin uppercaseSmallTexts($tc: $text, $fs: 10px) {
+    font-size: $fs;
     color: $tc;
     text-transform: uppercase;
     font-weight: $fwMedium;
 }
 
-@mixin h1_home() {
-    color: $text;
+@mixin h1_home($tc: $text) {
+    color: $tc;
     font-weight: $fwThin;
     font-size: 54px;
     line-height: 0.9;

@@ -134,3 +134,13 @@ if ($('.c-subMenu').length) {
         }
     });
 }
+
+// general
+if ($('.c-cart').length) {
+    $('.c-cart .item__remove').on('click', function() {
+        $(this).closest('.c-cart__item').remove();
+    });
+    $('.c-cart__close *').on('click', function() {
+        $('.l-nav__cart .c-subMenu').removeClass('is-active');
+    });
+}

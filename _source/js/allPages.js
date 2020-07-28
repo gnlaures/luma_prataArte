@@ -9,13 +9,6 @@ $(window).on('hashchange', function () {
     initGettersAndSetters();
 });
 
-// -> AOS
-if (is.not.ie()) {
-    AOS.init();
-} else {
-    $('*').removeAttr("data-aos");
-}
-
 // layout and sections scripts
 // -> l-
 if ($('.l-nav').length) {
@@ -145,6 +138,12 @@ if ($('.l-nav').length) {
         // reference var
         propsNav.scrollInit = scrollBody;
     });
+
+
+    // NAV SUPOORT SUB MENU
+    $('.support__close').on('click', function() {
+        $('.l-nav__support .c-subMenu').removeClass('is-active');
+    })
 
 }
 
