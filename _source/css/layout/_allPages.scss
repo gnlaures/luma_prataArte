@@ -24,7 +24,6 @@ body {
 	z-index: 10;
 	border-top: 6px solid $primary;
 	border-bottom: 1px solid transparent;
-	
 	&__primary {
 		@include transition();
 		display: block;
@@ -49,6 +48,68 @@ body {
 		align-items: center;
 		justify-content: space-between;
 		padding: 10px 80px 10px 0;
+		position: relative;
+		.l-nav__categoriesMenu {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			li {
+				min-height: 34px;
+				display: block;
+				> a {
+					@include uppercaseSmallTexts($black);
+					display: block;
+					padding: 10px;
+					border-bottom: 2px solid transparent;
+					cursor: pointer;
+					white-space: nowrap;
+					&:hover {
+						border-bottom: 2px solid $primary;
+					}
+				}
+				.c-subMenu__call {
+					&:after {
+						display: none;
+					}
+				}
+			}
+			.c-subMenu {
+				position: static;
+				.u-container {
+					max-width: 580px;
+				}
+				.content__categories {
+					flex: 1 1 auto;
+				}
+				.content__figure {
+					@include flexWidth(130px);
+					display: block;
+					position: relative;
+					a {
+						display: block;
+						width: 100%;
+					}
+					img {
+						display: block;
+						position: absolute;
+						top: -20px;
+						width: 100%;
+						object-fit: contain;
+					}
+				}
+				> .c-subMenu__content {
+					overflow-x: inherit;
+					overflow-y: inherit;
+					width: 100%;
+				}
+				&.is-active {
+					> .c-subMenu__content {
+						top: 55px;
+					}
+				}
+			}
+		}
 	}
 	&__support {
 		margin-right: 15%;
@@ -129,32 +190,6 @@ body {
 			padding-top: 55px;
 		}
 	}
-	&__categoriesMenu {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		li {
-			min-height: 34px;
-			display: block;
-			> a {
-				@include uppercaseSmallTexts($black);
-				display: block;
-				padding: 10px;
-				border-bottom: 2px solid transparent;
-				cursor: pointer;
-				white-space: nowrap;
-				&:hover {
-					border-bottom: 2px solid $primary;
-				}
-			}
-			.c-subMenu__call {
-				&:after {
-					display: none;
-				}
-			}
-		}
-	}
 	&__search {
 		@include flexWidth(190px);
 	}
@@ -189,6 +224,7 @@ body {
 		}
 	}
 	&__cart {
+		@include transition();
 		position: absolute;
 		top: 0;
 		right: 15px;
@@ -226,24 +262,152 @@ body {
 		}
 	}
 	
-	
+	// responsive content
 	&__contentHero {
 		@include scroll();
-		flex: 1 1 auto;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: flex-end;
-		align-items: center;
-		position: relative;
-		z-index: 3;
+		@include transition();
+		z-index: 10;
+		overflow-x: hidden;
+		overflow-y: auto;
+		display: block;
+		width: 300px;
+		max-width: 100%;
+		height: 100vh;
+		padding-bottom: 70px;
+		position: fixed;
+		left: -300px;
+		top: 0;
+		background: $primaryLight;
+		&.is-active {
+			left: 0;
+		}
+		.l-nav__userMobileAcc {
+			padding-top: 50px;
+			background: $primary;
+			padding-bottom: 20px;
+			a, strong {
+				display: block;
+				width: 100%;
+			}
+			a {
+				color: $white;
+				font-size: 16px;
+				padding: 30px;
+				font-weight: $fwRegular;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		
+		.l-nav__categoriesMenu,
+		.l-nav__controlAcc {
+			background: $primary;
+			padding: 0 30px;
+			position: relative;
+			margin-top: 0;
+			&:before {
+				@include square($white, 4px);
+				width: 28px;
+				top: -15px;
+				left: 30px;
+			}
+			> li {
+				border-top: 1px solid rgba(255,255,255,0.25);
+				&:first-of-type {
+					border-top: 0;
+				}
+				> a {
+					display: block;
+					width: 100%;
+					padding: 15px 0;
+					color: $white;
+					font-size: 13px;
+					text-transform: uppercase;
+					font-weight: $fwRegular;
+					text-align: left;
+				}
+			}
+			.c-subMenu {
+				> .c-subMenu__mask {
+					display: none !important;
+				}
+				> .c-subMenu__call {
+					&:after {
+						@include transforms(translateY(-50%), center);
+						background: url(#{$media_assets}caret-down-white.svg);
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: contain;
+						right: 0;
+						top: 50%;
+						left: inherit;
+						bottom: inherit;
+					}
+				}
+				> .c-subMenu__content {
+					position: relative;
+					overflow: hidden;
+					max-height: 0;
+					padding: 0 20px;
+					border: 0;
+					ul {
+						li {
+							display: block;
+							a {
+								@include uppercaseSmallTexts($white, 13px);
+							}
+						}
+					}
+				}
+				&.is-active {
+					> .c-subMenu__call {
+						&:after {@include transforms(translateY(-50%) rotate(180deg), center);}
+					}
+					> .c-subMenu__content {
+						overflow: auto;
+						top: 0;
+						padding: 0 20px 10px 20px;
+						max-height: 80vh;
+					}
+				}
+				.c-subMenu {
+					border: 0;
+				}
+			}
+		}
+		.l-nav__categoriesMenu {
+			padding-bottom: 40px;
+		}
+		.l-nav__controlAcc {
+			padding-bottom: 10px;
+		}
+		.c-listSupport {
+			padding-bottom: 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			background: $primaryLight;
+			a, .caption {
+				@include opacity(1);
+				color :$white;
+			}
+		}
+		.c-socialList {
+			padding: 25px;
+			width: 100%;
+			justify-content: center;
+			.caption {
+				color: $white;
+			}
+		}
 	}
 	
 	&__maskMenu {
 		&.maskAll,
 		&.maskMenu {
 			@include u-hideElement();
-			z-index: 2;
+			z-index: 9;
 			position: fixed;
 			top: 0;
 			left: 0;
@@ -265,6 +429,7 @@ body {
 	&.hidden {
 		top: -300px;
 	}
+	
 	&.scrolled {
 		border-bottom: 1px solid $mutedGray;
 		border-top: 3px solid $primary;
@@ -275,8 +440,12 @@ body {
 		.l-nav__secondary {
 			padding-top: 5px;
 			padding-bottom: 0;
+			.l-nav__categoriesMenu .c-subMenu.is-active>.c-subMenu__content {
+				top: 40px;
+			}
 		}
 		.c-hamburguer {
+			top: 15px;
 			&.is-active {
 				margin-top: 5px;
 			}

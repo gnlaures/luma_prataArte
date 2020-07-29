@@ -100,7 +100,7 @@
 	appearance: $style;
 }
 
-@mixin scroll($bg: $mutedGray, $bar: $secondary, $size: 6px, $radius: 0px) {
+@mixin scroll($bg: $mutedGray, $bar: $primaryDark, $size: 6px, $radius: 0px) {
 	&::-webkit-scrollbar {
 	  width: $size;
 	  height: $size;

@@ -314,62 +314,26 @@
 
 // hamburguer menu
 .c-hamburguer {
+    @include transition($duration: 250ms);
     display: none;
     position: absolute;
     left: 15px;
-    top: 20px;
-    z-index: 4;
-    .c-hamburguer__hero {
-        @include transforms($property: rotate(0deg));
-        @include transition();
-        cursor: pointer;
-        display: block;
-        height: 26px;
-        position: relative;
-        width: 30px;
-        .bar {
-            @extend .u-showElement;
-            @include transforms($property: rotate(0deg));
-            @include transition();
-            background: $mutedGray;
-            display: block;
-            height: 2px;
-            position: absolute;
-            width: 100%;
-            &.bar_1 {
-                top: 0;
-                left: 0;
-            }
-            &.bar_2 {
-                top: 12px;
-                left: 0;
-            }
-            &.bar_3 {
-                top: 24px;
-                left: 0;
-            }
-        }
-    }
+    top: 26px;
+    z-index: 14;
+    width: 13px;
+    height: 10px;
+    cursor: pointer;
+    background: url(#{$media_icons}icon_hamburguer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     &.is-active {
-        margin-top: -10px;
-        right: 15px;
-        .c-hamburguer__hero {
-            @include transforms($property: rotate(180deg) scale(0.8));
-            .bar {
-                background: $white;
-                &.bar_1 {
-                    top: 12px;
-                    @include transforms($property: rotate(45deg));
-                }
-                &.bar_2 {
-                    @extend .u-hideElement;
-                }
-                &.bar_3 {
-                    top: 12px;
-                    @include transforms($property: rotate(-45deg));
-                }
-            }
-        }
+        @include transforms(scale(1.5) rotate(180deg), center);
+        left: 30px;
+        background: url(#{$media_assets}caret-right-white.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
     }
 }
 
@@ -1172,13 +1136,6 @@ $c_btnIcon_maxWidth: 220px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    > li {
-        background: $lightGray;
-        padding: 10px;
-        &:nth-of-type(odd) {
-            background: $white2;
-        }
-    }
     &.--col12 {> li {@extend .u-fw8;}}
     &.--col11 {> li {@extend .u-fw9;}}
     &.--col10 {> li {@extend .u-fw10;}}

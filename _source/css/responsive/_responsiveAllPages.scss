@@ -15,6 +15,9 @@
     }
 }
 @media screen and (max-width: 1130px) {
+    .u-maxRow {
+        padding-top: 153px;
+    }
     .l-nav {
         background: $white2;
         .c-hamburguer {
@@ -22,29 +25,22 @@
         }
         &__primary {
             padding-top: 20px;
-        }
-        &__contentHero {
-            @include transition();
-            overflow-x: hidden;
-            overflow-y: auto;
-            display: block;
-            background: $white;
-            height: 100vh;
-            position: fixed;
-            left: -300px;
-            top: 0;
-            width: 260px;
-            max-width: 100%;
-            padding-bottom: 70px;
-            &.is-active {
-                left: 0;
-            }
+            padding-bottom: 10px;
         }
         
         &__secondary {
             padding-right: 15px;
             padding-left: 15px;
             flex-wrap: wrap;
+            .l-nav__categoriesMenu {
+                @include flexWidth(100%);
+                order: 2;
+                justify-content: center;
+                margin-top: 10px;
+                .c-subMenu.is-active>.c-subMenu__content {
+                    top: 90px;
+                }
+            }
         }
         &__search {
             @include flexWidth(100%);
@@ -62,12 +58,6 @@
                     right: 15px;
                 }
             }
-        }
-        &__categoriesMenu {
-            @include flexWidth(100%);
-            order: 2;
-            justify-content: center;
-            margin-top: 10px;
         }
         &__cart {
             padding: 0;
@@ -91,16 +81,36 @@
         &__userAcc{
             display: none;
         }
+        
+        &.scrolled {
+            .l-nav__cart {
+                top: 11px;
+            }
+            .l-nav__secondary {
+                .l-nav__categoriesMenu {
+                    .c-subMenu.is-active>.c-subMenu__content {
+                        top: 78px;
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 720px) {
-    .l-nav__categoriesMenu {
-        @include scroll($size: 2px, $bg: $white2, $bar: $mutedGray);
-        overflow-x: auto;
-        overflow-y: hidden;
-        justify-content: space-between;
+    .l-nav {
+        &__secondary {
+            .l-nav__categoriesMenu {
+                @include scroll($size: 2px, $bg: $white2, $bar: $mutedGray);
+                overflow-x: auto;
+                overflow-y: hidden;
+                justify-content: space-between;
+            }
+        }
     }
 }
-
-
-
+@media screen and (max-width: 400px) {
+    .l-nav__cart .c-subMenu__content {
+        right: -20px;
+        width: 100vw;
+    }
+}

@@ -1,0 +1,22 @@
+// l header home
+@media screen and (max-width: 750px) {
+	.l-headerHome {
+		overflow: hidden;
+		img {
+			@include transforms(scale(1.15), center);
+			object-position: 62% 50%;
+		}
+		h1 {
+			max-width: 180px;
+			&:after {
+				background: $primary;
+				width: 30px;
+				height: 3px;
+			}
+		}
+		.u-container {
+			padding: 100px 45px;
+			align-items: flex-end;
+		}
+	}
+}
