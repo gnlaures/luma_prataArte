@@ -459,10 +459,6 @@ main {
 		}
 	}
 }
-.l-footer {
-	background: $mutedGray;
-	padding: 30px 0;
-}
 .l-headerHome {
 	display: block;
 	position: relative;
@@ -496,6 +492,126 @@ main {
 			bottom: -20px;
 			background: $black;
 		}
+	}
+}
+.l-footer {
+	background: $mutedGray;
+	display: block;
+	position: relative;
+	margin-top: -20px;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 40px;
+		background: $white2;
+	}
+	.u-container {
+		max-width: 1340px;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__brand {
+		@include flexWidth(56px);
+	}
+	&__cover {
+		@include flexWidth(305px);
+		align-self: flex-end;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+	&__content {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		padding: 80px 0 40px 0;
+	}
+	&__institutional {
+		@include flexWidth(25%);
+		padding-left: 30px;
+	}
+	&__help {
+		flex: 1 1 auto;
+		padding-left: 30px;
+		.c-toggleList {
+			&__content {
+				display: flex;
+				flex-direction: row;
+				> * {
+					@include flexWidth(50%);
+				}
+			}
+		}
+	}
+	&__payments {
+		@include flexWidth(180px);
+		padding-left: 30px;
+		img {
+			display: block;
+			max-width: 100%;
+			margin-bottom: 20px;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+	
+	.c-toggleList {
+		&__header {
+			display: none;
+		}
+		&__content {
+			@include u-showElement;
+			padding: 0;
+			max-height: inherit;
+			border: 0;
+			ul {
+				&:not(.c-socialList):not(.c-listSupport) {
+					li {
+						display: block;
+						margin-bottom: 2px;
+						&:last-of-type {
+							margin-bottom: 0;
+						}
+					}
+					a {
+						display: block;
+						font-size: 13px;
+						color: $text;
+						&:hover {
+							color: $textDark;
+						}
+					}
+				}
+			}
+			
+		}
+		&.is-active {
+		
+		}
+	}
+	
+	.c-listSupport {
+		background-color: transparent;
+		padding: 0;
+		> li > a {
+			&:hover {
+				background-color: transparent !important;
+			}
+		}
+	}
+}
+.l-copyright {
+	display: block;
+	background: $white2;
+	padding: 30px 50px;
+	p {
+		@include paragrafos($fs: 13px);
 	}
 }
 
@@ -747,7 +863,7 @@ main {
 .s-homeInstagram {
 	display: block;
 	position: relative;
-	z-index: 1;
+	z-index: 3;
 	margin-top: -2px;
 	.u-containerFlex {
 		max-width: 956px;
