@@ -17,13 +17,13 @@
 		<div class="u-container u-containerFlex">
 			<div class="s-featuredHome__figure" style="background: url('media/img/content/home_special_3.png')"></div>
 			<div class="s-featuredHome__product">
-				<div class="product__resume c-smallCardResume --alignRight">
+				<a href="#" class="product__resume c-smallCardResume --alignRight">
 					<div class="c-smallCardResume__title"><h2>Anel de prata <strong>com brilhantes</strong></h2></div>
 					<div class="c-smallCardResume__price">
 						<span class="times">3x</span>
 						<span class="price">R$ 258,30</span>
 					</div>
-				</div>
+				</a>
 				<div class="product__figure">
 					<img src="media/img/content/home_jewerly_1.png" alt="Anel de prata com brilhantes">
 				</div>
@@ -36,9 +36,12 @@
 		</div>
 	</section>
 	<section class="s-featuredCollection">
-		<div class="u-container u-containerFlex">
-			<h3 class="s-featuredCollection__caption">Coleção<strong>Cordões e colares</strong></h3>
-			<h2 class="s-featuredCollection__title">The Art of Being One Made for Two</h2>
+		<div class="u-container">
+			<div class="content u-containerFlex">
+				<h3 class="s-featuredCollection__caption">Coleção<strong>Cordões e colares</strong></h3>
+				<figure class="s-featuredCollection__figure"><img src="media/img/content/home_special_2.png" alt="kids also like jewelry"></figure>
+				<h2 class="s-featuredCollection__title">The Art of Being One Made for Two</h2>
+			</div>
 		</div>
 	</section>
 	<section class="s-lastFeaturedCollection">
@@ -48,10 +51,9 @@
 				<p>As jóias da Prata e Arte são incríveis e o atendimento é sem dúvida um ponto forte, já compro ha anos e o atrendimento foi semre o mesmo.</p>
 				<a href="#">Deixe seu comentário</a>
 			</div>
-			<div class="s-lastFeaturedCollection__figures">
-				<figure class="main"><img src="media/img/content/home_special_2.png" alt="kids also like jewelry"></figure>
-				<figure class="product"><img src="media/img/content/product_21.png" alt="kids also like jewelry"></figure>
-			</div>
+			<figure class="s-lastFeaturedCollection__figure">
+				<img src="media/img/content/product_21.png" alt="kids also like jewelry">
+			</figure>
 			<div class="s-lastFeaturedCollection__content">
 				<h1>kids also like jewelry</h1>
 				<div>
@@ -62,10 +64,12 @@
 		</div>
 	</section>
 	<section class="s-homeInstagram">
-		<div class="u-container">
+		<div class="u-container u-containerFlex">
 			<div class="s-homeInstagram__title">
-				<h2>Siga a @prataearte nas redes sociais</h2>
-				<a href="#">icon</a>
+				<h2>Siga a <strong>@prataearte</strong><br>nas redes sociais</h2>
+				<a href="#">
+					<?php include('media/img/icons/social/social_instagram.svg'); ?>
+				</a>
 			</div>
 			<div class="s-homeInstagram__grid">
 				<ul class="c-responsiveGrid"
@@ -91,9 +95,9 @@
 						data-maxw-cols="2, 1"
 						data-cols-init="3">
 					<li>
-						<div class="c-cardProduct">
-							<div class="cardProduct__resume">
-								<div class="c-smallCardResume --alignLeft --withTopDetail">
+						<a href="#" class="c-cardProduct">
+							<div class="c-cardProduct__resume">
+								<div class="c-smallCardResume --withTopDetail">
 									<div class="c-smallCardResume__title"><h2>Anel de prata <strong>com brilhantes</strong></h2></div>
 									<div class="c-smallCardResume__price">
 										<span class="times">3x</span>
@@ -104,12 +108,12 @@
 							<div class="c-cardProduct__figure">
 								<img src="media/img/content/product_22.png" alt="Anel de prata com brilhantes">
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<div class="c-cardProduct">
-							<div class="cardProduct__resume">
-								<div class="c-smallCardResume --alignLeft --withTopDetail">
+						<a href="#" class="c-cardProduct">
+							<div class="c-cardProduct__resume">
+								<div class="c-smallCardResume --withTopDetail">
 									<div class="c-smallCardResume__title"><h2>Anel de prata <strong>com brilhantes</strong></h2></div>
 									<div class="c-smallCardResume__price">
 										<span class="times">3x</span>
@@ -120,12 +124,12 @@
 							<div class="c-cardProduct__figure">
 								<img src="media/img/content/product_1.png" alt="Anel de prata com brilhantes">
 							</div>
-						</div>
+						</a>
 					</li>
 					<li>
-						<div class="c-cardProduct">
-							<div class="cardProduct__resume">
-								<div class="c-smallCardResume --alignLeft --withTopDetail">
+						<a href="#" class="c-cardProduct">
+							<div class="c-cardProduct__resume">
+								<div class="c-smallCardResume --withTopDetail">
 									<div class="c-smallCardResume__title"><h2>Anel de prata <strong>com brilhantes</strong></h2></div>
 									<div class="c-smallCardResume__price">
 										<span class="times">3x</span>
@@ -136,7 +140,7 @@
 							<div class="c-cardProduct__figure">
 								<img src="media/img/content/product_2.png" alt="Anel de prata com brilhantes">
 							</div>
-						</div>
+						</a>
 					</li>
 				</ul>
 			</div>

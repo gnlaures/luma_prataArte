@@ -182,7 +182,7 @@
 				<div class="c-subMenu__content">
 					<div class="u-container u-containerFlex">
 						<div class="content__categories">
-							<ul class="c-responsiveGrid" data-maxw-breaks="640, 450" data-maxw-cols="2, 1" data-cols-init="3">
+							<ul class="c-responsiveGrid" data-maxw-breaks="640" data-maxw-cols="2" data-cols-init="3">
 								<li><a href="#">Alianças</a></li>
 								<li><a href="#">Alianças</a></li>
 								<li><a href="#">Alianças</a></li>
@@ -218,7 +218,7 @@
 				<div class="c-subMenu__content">
 					<div class="u-container u-containerFlex">
 						<div class="content__categories">
-							<ul class="c-responsiveGrid" data-maxw-breaks="640, 450" data-maxw-cols="2, 1" data-cols-init="3">
+							<ul class="c-responsiveGrid" data-maxw-breaks="640" data-maxw-cols="2" data-cols-init="3">
 								<li><a href="#">Infantis</a></li>
 								<li><a href="#">Infantis</a></li>
 								<li><a href="#">Infantis</a></li>
@@ -245,7 +245,7 @@
 				<div class="c-subMenu__content">
 					<div class="u-container u-containerFlex">
 						<div class="content__categories">
-							<ul class="c-responsiveGrid" data-maxw-breaks="640, 450" data-maxw-cols="2, 1" data-cols-init="3">
+							<ul class="c-responsiveGrid" data-maxw-breaks="640" data-maxw-cols="2" data-cols-init="3">
 								<li><a href="#">Anéis</a></li>
 								<li><a href="#">Anéis</a></li>
 								<li><a href="#">Anéis</a></li>
@@ -268,7 +268,7 @@
 				<div class="c-subMenu__content">
 					<div class="u-container u-containerFlex">
 						<div class="content__categories">
-							<ul class="c-responsiveGrid" data-maxw-breaks="640, 450" data-maxw-cols="2, 1" data-cols-init="3">
+							<ul class="c-responsiveGrid" data-maxw-breaks="640" data-maxw-cols="2" data-cols-init="3">
 								<li><a href="#">SubCategoria</a></li>
 								<li><a href="#">SubCategoria</a></li>
 								<li><a href="#">SubCategoria</a></li>
@@ -297,7 +297,7 @@
 				<div class="c-subMenu__content">
 					<div class="u-container u-containerFlex">
 						<div class="content__categories">
-							<ul class="c-responsiveGrid" data-maxw-breaks="640, 450" data-maxw-cols="2, 1" data-cols-init="3">
+							<ul class="c-responsiveGrid" data-maxw-breaks="640" data-maxw-cols="2" data-cols-init="3">
 								<li><a href="#">SubCategoria</a></li>
 								<li><a href="#">SubCategoria</a></li>
 								<li><a href="#">SubCategoria</a></li>
@@ -326,7 +326,7 @@
 				<div class="c-subMenu__content">
 					<div class="u-container u-containerFlex">
 						<div class="content__categories">
-							<ul class="c-responsiveGrid" data-maxw-breaks="640, 450" data-maxw-cols="2, 1" data-cols-init="3">
+							<ul class="c-responsiveGrid" data-maxw-breaks="640" data-maxw-cols="2" data-cols-init="3">
 								<li><a href="#">SubCategoria</a></li>
 								<li><a href="#">SubCategoria</a></li>
 								<li><a href="#">SubCategoria</a></li>
@@ -355,7 +355,7 @@
 				<div class="c-subMenu__content">
 					<div class="u-container u-containerFlex">
 						<div class="content__categories">
-							<ul class="c-responsiveGrid" data-maxw-breaks="640, 450" data-maxw-cols="2, 1" data-cols-init="3">
+							<ul class="c-responsiveGrid" data-maxw-breaks="640" data-maxw-cols="2" data-cols-init="3">
 								<li><a href="#">SubCategoria</a></li>
 								<li><a href="#">SubCategoria</a></li>
 								<li><a href="#">SubCategoria</a></li>
@@ -384,7 +384,7 @@
 				<div class="c-subMenu__content">
 					<div class="u-container u-containerFlex">
 						<div class="content__categories">
-							<ul class="c-responsiveGrid" data-maxw-breaks="640, 450" data-maxw-cols="2, 1" data-cols-init="3">
+							<ul class="c-responsiveGrid" data-maxw-breaks="640" data-maxw-cols="2" data-cols-init="3">
 								<li><a href="#">SubCategoria</a></li>
 								<li><a href="#">SubCategoria</a></li>
 								<li><a href="#">SubCategoria</a></li>

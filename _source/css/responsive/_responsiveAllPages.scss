@@ -95,6 +95,13 @@
             }
         }
     }
+    .l-nav__secondary .l-nav__categoriesMenu .c-subMenu>.c-subMenu__content {
+        overflow-y: scroll;
+    }
+    .l-nav__secondary .l-nav__categoriesMenu .c-subMenu .content__figure img {
+        position: relative;
+        top: 0;
+    }
 }
 @media screen and (max-width: 720px) {
     .l-nav {
@@ -106,6 +113,11 @@
                 justify-content: space-between;
             }
         }
+    }
+}
+@media screen and (max-width: 640px) {
+    .l-nav__secondary .l-nav__categoriesMenu .c-subMenu .content__figure {
+        display: none;
     }
 }
 @media screen and (max-width: 400px) {
