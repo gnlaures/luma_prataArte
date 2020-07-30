@@ -735,7 +735,7 @@ main {
 			margin-bottom: 20px;
 		}
 		p {
-			@include paragrafos();
+			@include paragrafos($tc: $black);
 			max-width: 200px;
 		}
 		.c-btn {
@@ -838,7 +838,7 @@ main {
 			max-width: 350px;
 		}
 		p {
-			@include paragrafos();
+			@include paragrafos($tc: $black);
 			max-width: 160px;
 		}
 	}
