@@ -545,6 +545,9 @@ main {
 				> * {
 					@include flexWidth(50%);
 				}
+				> div {
+					padding-left: 30px;
+				}
 			}
 		}
 	}
