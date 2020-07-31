@@ -623,7 +623,7 @@ main {
 	display: block;
 	position: relative;
 	z-index: 1;
-	margin-top: -25px;
+	padding-top: 10px;
 	.u-containerFlex {
 		max-width: 1000px;
 		justify-content: flex-end;
@@ -634,6 +634,7 @@ main {
 		display: flex;
 		justify-content: flex-end;
 		position: relative;
+		z-index: 3;
 		figcaption {
 			display: block;
 			position: absolute;
@@ -656,7 +657,7 @@ main {
 		img {
 			display: block;
 			position: relative;
-			right: -45px;
+			right: 20px;
 			height: 440px;
 		}
 	}
@@ -665,6 +666,22 @@ main {
 		padding: 90px 0;
 		position: relative;
 		z-index: 2;
+		* {
+			position: relative;
+			z-index: 2;
+		}
+	}
+	.circleContent {
+		@include roundedAll(50%);
+		display: block;
+		width: 302px;
+		height: 302px;
+		border: 25px solid $primary;
+		background: $white2;
+		position: absolute;
+		top: -35px;
+		left: -245px;
+		z-index: 1;
 	}
 	h1 {
 		@include h1_home($black);
@@ -707,11 +724,13 @@ main {
 			align-self: flex-end;
 			position: relative;
 			left: -80px;
+			z-index: 2;
 		}
 		.product__figure {
 			position: absolute;
 			right: 194px;
 			top: -99px;
+			z-index: 1;
 			img {
 				object-position: center;
 				object-fit: contain;
@@ -722,6 +741,8 @@ main {
 		.product__description {
 			@include flexWidth(152px);
 			display: block;
+			position: relative;
+			z-index: 2;
 			h3 {
 				@include paragrafos($tc: $black, $fw: $fwBold, $mbLOT: 8px);
 			}
