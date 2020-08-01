@@ -1,0 +1,41 @@
+// c-cardProduct
+@media screen and (max-width: 470px) {
+	.c-cardProduct {
+		flex-wrap: wrap;
+		padding: 10px;
+		&__resume {
+			@include flexWidth(100%);
+			padding-top: 0px;
+			order: 2;
+		}
+		&__figure {
+			@include flexWidth(100%);
+			order: 1;
+			img {
+				max-width: 100%;
+				min-width: 130px;
+				height: 230px;
+				margin: 0 auto;
+			}
+		}
+	}
+	.c-smallCardResume {
+		margin-top: 70px;
+		&__title {
+			h2, h2 strong {
+				text-align: center;
+			}
+		}
+		&__price {
+			justify-content: center;
+		}
+		&.--withTopDetail {
+			&:before {
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				top: -35px;
+			}
+		}
+	}
+}

@@ -461,3 +461,34 @@
 }
 
 // s-suggestionsProduct
+@media screen and (max-width: 1050px) {
+    .s-suggestionsProduct {
+        margin-top: 40px;
+        &__intro {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 1080px) {
+    .s-suggestionsProduct {
+        padding-bottom: 40px;
+    }
+    .l-footer {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 740px) {
+    .s-suggestionsProduct__grid .splide__list li {
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .s-suggestionsProduct {
+        .u-container {
+            padding: 0;
+        }
+    }
+    .s-suggestionsProduct__grid .splide__list li {
+        min-width: 200px;
+    }
+}

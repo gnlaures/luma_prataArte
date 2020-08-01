@@ -12,6 +12,20 @@ main {
 	padding-top: 133px;
 }
 
+// libs
+.splide__pagination {
+	position: relative;
+	bottom: -25px;
+	.splide__pagination__page {
+		&:hover {
+			background: $primaryLight;
+		}
+		&.is-active {
+			background: $primaryDark;
+		}
+	}
+}
+
 // l-
 .l-nav {
 	@include transition($ease: ease-in);
@@ -984,7 +998,22 @@ main {
 	}
 	&__grid {
 		margin-top: 30px;
+		.splide__products {
+			width: 100%;
+		}
+		.splide__track {
+			width: 100%;
+		}
+		.splide__list {
+			flex-wrap: nowrap;
+			display: flex;
+			li {
+				width: 400px;
+				padding: 0 15px;
+				.c-cardProduct {
+					margin: 0 auto;
+				}
+			}
+		}
 	}
 }
-
-// #

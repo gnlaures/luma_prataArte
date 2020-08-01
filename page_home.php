@@ -92,59 +92,60 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
 			</div>
 			<div class="s-suggestionsProduct__grid">
-				<ul class="c-responsiveGrid"
-						data-maxw-breaks="780, 400"
-						data-maxw-cols="2, 1"
-						data-cols-init="3">
-					<li>
-						<a href="#" class="c-cardProduct">
-							<div class="c-cardProduct__resume">
-								<div class="c-smallCardResume --withTopDetail">
-									<div class="c-smallCardResume__title"><h2>Anel de prata <strong>com brilhantes</strong></h2></div>
-									<div class="c-smallCardResume__price">
-										<span class="times">3x</span>
-										<span class="price">R$ 258,30</span>
+				<div class="splide__products">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">
+								<a href="#" class="c-cardProduct">
+									<div class="c-cardProduct__resume">
+										<div class="c-smallCardResume --withTopDetail">
+											<div class="c-smallCardResume__title"><h2>Anel de prata <strong>com brilhantes</strong></h2></div>
+											<div class="c-smallCardResume__price">
+												<span class="times">3x</span>
+												<span class="price">R$ 258,30</span>
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-							<div class="c-cardProduct__figure">
-								<img src="media/img/content/product_22.png" alt="Anel de prata com brilhantes">
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="c-cardProduct">
-							<div class="c-cardProduct__resume">
-								<div class="c-smallCardResume --withTopDetail">
-									<div class="c-smallCardResume__title"><h2>Anel de prata <strong>com brilhantes</strong></h2></div>
-									<div class="c-smallCardResume__price">
-										<span class="times">3x</span>
-										<span class="price">R$ 258,30</span>
+									<div class="c-cardProduct__figure">
+										<img src="media/img/content/product_22.png" alt="Anel de prata com brilhantes">
 									</div>
-								</div>
-							</div>
-							<div class="c-cardProduct__figure">
-								<img src="media/img/content/product_1.png" alt="Anel de prata com brilhantes">
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="c-cardProduct">
-							<div class="c-cardProduct__resume">
-								<div class="c-smallCardResume --withTopDetail">
-									<div class="c-smallCardResume__title"><h2>Anel de prata <strong>com brilhantes</strong></h2></div>
-									<div class="c-smallCardResume__price">
-										<span class="times">3x</span>
-										<span class="price">R$ 258,30</span>
+								</a>
+							</li>
+							<li class="splide__slide">
+								<a href="#" class="c-cardProduct">
+									<div class="c-cardProduct__resume">
+										<div class="c-smallCardResume --withTopDetail">
+											<div class="c-smallCardResume__title"><h2>Anel de prata <strong>com brilhantes</strong></h2></div>
+											<div class="c-smallCardResume__price">
+												<span class="times">3x</span>
+												<span class="price">R$ 258,30</span>
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-							<div class="c-cardProduct__figure">
-								<img src="media/img/content/product_2.png" alt="Anel de prata com brilhantes">
-							</div>
-						</a>
-					</li>
-				</ul>
+									<div class="c-cardProduct__figure">
+										<img src="media/img/content/product_1.png" alt="Anel de prata com brilhantes">
+									</div>
+								</a>
+							</li>
+							<li class="splide__slide">
+								<a href="#" class="c-cardProduct">
+									<div class="c-cardProduct__resume">
+										<div class="c-smallCardResume --withTopDetail">
+											<div class="c-smallCardResume__title"><h2>Anel de prata <strong>com brilhantes</strong></h2></div>
+											<div class="c-smallCardResume__price">
+												<span class="times">3x</span>
+												<span class="price">R$ 258,30</span>
+											</div>
+										</div>
+									</div>
+									<div class="c-cardProduct__figure">
+										<img src="media/img/content/product_2.png" alt="Anel de prata com brilhantes">
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

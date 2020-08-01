@@ -148,3 +148,24 @@ if ($('.l-nav').length) {
 }
 
 // -> s-
+if (('.s-suggestionsProduct').length) {
+    var splide__products = new Splide('.splide__products', {
+        perPage: 3,
+        focus  : 'center',
+        arrows: false,
+        pagination: false,
+        breakpoints: {
+            1070: {
+                perPage: 2,
+            },
+            740: {
+                padding: {
+                    right: '50px',
+                    left : '50px',
+                },
+                perPage: 1,
+                pagination: true,
+            },
+        }
+    }).mount();
+}

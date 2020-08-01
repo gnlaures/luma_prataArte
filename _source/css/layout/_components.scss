@@ -1356,20 +1356,25 @@ $c_btnIcon_maxWidth: 220px;
 	position: relative;
 	padding: 20px;
 	border: 1px solid transparent;
+    max-width: 400px;
     &__resume {
-	    @include flexWidth(200px);
+	    @include flexWidth(175px);
 	    display: block;
-	    padding-right: 10px;
 	    padding-top: 80px;
+        position: relative;
+        z-index: 2;
     }
     &__figure {
         flex: 1 1 auto;
 	    display: flex;
 	    flex-direction: row;
 	    justify-content: flex-end;
+        position: relative;
+        z-index: 1;
 	    img {
 		    display: block;
 		    max-width: 100%;
+            min-width: 130px;
 		    height: 265px;
 		    object-fit: contain;
 		    object-position: center;
