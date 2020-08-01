@@ -57,12 +57,13 @@
 								</li>
 								<li class="timeSupport">
 									<span class="caption">Mídias sociais</span>
-									<ul class="c-socialList --rounded --secondary">
-										<li><a href="#"><?php include("media/img/icons/social/social_facebook.svg");?></a></li>
-										<li><a href="#"><?php include("media/img/icons/social/social_google.svg");?></a></li>
-										<li><a href="#"><?php include("media/img/icons/social/social_instagram.svg");?></a></li>
-										<li><a href="#"><?php include("media/img/icons/social/social_link.svg");?></a></li>
-										<li><a href="#"><?php include("media/img/icons/social/social_linkedin.svg");?></a></li>
+									<ul class="c-socialList --rounded --gray">
+										<li><a href="#"><img src="media/img/icons/social/social_facebook.svg"></a></li>
+										<li><a href="#"><img src="media/img/icons/social/social_twitter.svg"></a></li>
+										<li><a href="#"><img src="media/img/icons/social/social_youtube.svg"></a></li>
+										<li><a href="#"><img src="media/img/icons/social/social_pinterest.svg"></a></li>
+										<li><a href="#"><img src="media/img/icons/social/social_instagram.svg"></a></li>
+										<li><a href="#"><img src="media/img/icons/social/social_blogger.svg"></a></li>
 									</ul>
 								</li>
 							</ul>

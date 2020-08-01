@@ -909,10 +909,10 @@ $c_btnIcon_maxWidth: 220px;
     a {
         display: block;
     }
-    svg {
+    svg, img {
         display: block;
-        width: 20px;
-        height: 20px;
+        width: 14px;
+        height: 14px;
         path, circle {
             @include transition();
         }
@@ -920,39 +920,60 @@ $c_btnIcon_maxWidth: 220px;
     &.--rounded {
         a {
             @include transition();
+            @include roundedAll();
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            width: 32px;
-            height: 32px;
+            width: 26px;
+            height: 26px;
         }
         &.--primary {
             a {
-                background: $primary;
-                svg path, svg circle {
-                    fill: $white !important;
+                border: 1px solid $primary;
+                img, svg path, svg circle {
+                    fill: $primary !important;
                 }
                 &:hover {
-                    background: $primaryDark;
+                    border: 1px solid $primaryDark;
+                    img, svg path, svg circle {
+                        fill: $white !important;
+                    }
+                }
+            }
+        }
+        &.--gray {
+            a {
+                border: 1px solid $darkGray;
+                img, svg path, svg circle {
+                    fill: $darkGray !important;
+                }
+                &:hover {
+                    border: 1px solid $baseGray;
+                    img, svg path, svg circle {
+                        fill: $white !important;
+                    }
                 }
             }
         }
         &.--secondary {
             a {
-                background: $secondary;
-                svg path, svg circle {
-                    fill: $white !important;
+                border: 1px solid $secondary;
+                img, svg path, svg circle {
+                    fill: $secondary !important;
                 }
                 &:hover {
-                    background: $secondaryDark;
+                    border: 1px solid $secondaryDark;
+                    img, svg path, svg circle {
+                        fill: $white !important;
+                    }
                 }
             }
         }
         &.--white {
             a {
                 background: $white;
-                svg path, svg circle {
+                img, svg path, svg circle {
                     fill: $baseGray !important;
                 }
                 &:hover {
@@ -973,11 +994,11 @@ $c_btnIcon_maxWidth: 220px;
         }
         &.--primary {
             a {
-                svg path, svg circle {
+                img, svg path, svg circle {
                     fill: $primary !important;
                 }
                 &:hover {
-                    svg path, svg circle {
+                    img, svg path, svg circle {
                         fill: $primaryDark !important;
                     }
                 }
@@ -985,11 +1006,11 @@ $c_btnIcon_maxWidth: 220px;
         }
         &.--secondary {
             a {
-                svg path, svg circle {
+                img, svg path, svg circle {
                     fill: $secondary !important;
                 }
                 &:hover {
-                    svg path, svg circle {
+                    img, svg path, svg circle {
                         fill: $secondaryDark !important;
                     }
                 }
@@ -997,11 +1018,11 @@ $c_btnIcon_maxWidth: 220px;
         }
         &.--white {
             a {
-                svg path, svg circle {
+                img, svg path, svg circle {
                     fill: $white !important;
                 }
                 &:hover {
-                    svg path, svg circle {
+                    img, svg path, svg circle {
                         fill: $white3 !important;
                     }
                 }

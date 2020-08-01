@@ -511,15 +511,13 @@
 }
 
 // s-headResults
-@media screen and (max-width: 580px) {
-    .s-headResults {
-        .orderBy {
-            display: none;
-        }
-    }
-}
 @media screen and (max-width: 900px) {
     .s-filters {
+        &__menu {
+            li.u-dnone {
+                display: block !important;
+            }
+        }
         &__end {
             display: none;
         }
@@ -528,6 +526,13 @@
 @media screen and (max-width: 680px) {
     .s-filters__menu>.c-subMenu>.c-subMenu__content .content__products {
         display: none;
+    }
+}
+@media screen and (max-width: 580px) {
+    .s-headResults {
+        .orderBy {
+            display: none;
+        }
     }
 }
 

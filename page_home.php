@@ -4,7 +4,10 @@
 	<section class="s-newCollection">
 		<div class="u-container u-containerFlex">
 			<figure class="s-newCollection__figure">
-				<img src="media/img/content/home_special.png" alt="special jewelry for special people">
+				<picture>
+					<source srcset="media/img/content/home_special_mobile.png" media="(max-width: 780px)">
+					<img src="media/img/content/home_special.png" alt="special jewelry for special people">
+				</picture>
 				<figcaption><a href="#">Conheça <strong>a nova Coleção</strong></a></figcaption>
 			</figure>
 			<div class="s-newCollection__content">

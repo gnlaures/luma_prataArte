@@ -104,28 +104,28 @@
 					<div class="content__hero">
 						<h3>--primary</h3>
 						<a href="#" class="c-btnWithIcon --primary">
-							<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+							<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 							<span>c-btnWithIcon</span>
 						</a>
 					</div>
 					<div class="content__hero">
 						<h3>--green</h3>
 						<a href="#" class="c-btnWithIcon --green">
-							<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+							<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 							<span>c-btnWithIcon</span>
 						</a>
 					</div>
 					<div class="content__hero">
 						<h3>--secondary</h3>
 						<a href="#" class="c-btnWithIcon --secondary">
-							<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+							<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 							<span>c-btnWithIcon</span>
 						</a>
 					</div>
 					<div class="content__hero">
 						<h3>--disabled</h3>
 						<a href="#" class="c-btnWithIcon --disabled">
-							<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+							<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 							<span>c-btnWithIcon</span>
 						</a>
 					</div>
@@ -139,28 +139,28 @@
 					<div class="content__hero">
 						<h3>--stroke --primary</h3>
 						<a href="#" class="c-btnWithIcon --primary --stroke">
-							<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+							<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 							<span>c-btnWithIcon</span>
 						</a>
 					</div>
 					<div class="content__hero">
 						<h3>--stroke --green</h3>
 						<a href="#" class="c-btnWithIcon --green --stroke">
-							<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+							<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 							<span>c-btnWithIcon</span>
 						</a>
 					</div>
 					<div class="content__hero">
 						<h3>--stroke --secondary</h3>
 						<a href="#" class="c-btnWithIcon --secondary --stroke">
-							<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+							<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 							<span>c-btnWithIcon</span>
 						</a>
 					</div>
 					<div class="content__hero">
 						<h3>--stroke --disabled</h3>
 						<a href="#" class="c-btnWithIcon --disabled --stroke">
-							<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+							<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 							<span>c-btnWithIcon</span>
 						</a>
 					</div>
@@ -174,28 +174,28 @@
 					<div class="content__hero">
 						<h3>--small --primary</h3>
 						<a href="#" class="c-btnWithIcon --primary --small">
-							<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+							<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 							<span>c-btnWithIcon</span>
 						</a>
 					</div>
 					<div class="content__hero">
 						<h3>--small --green</h3>
 						<a href="#" class="c-btnWithIcon --green --small">
-							<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+							<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 							<span>c-btnWithIcon</span>
 						</a>
 					</div>
 					<div class="content__hero">
 						<h3>--small --secondary</h3>
 						<a href="#" class="c-btnWithIcon --secondary --small">
-							<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+							<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 							<span>c-btnWithIcon</span>
 						</a>
 					</div>
 					<div class="content__hero">
 						<h3>--small --disabled</h3>
 						<a href="#" class="c-btnWithIcon --disabled --small">
-							<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+							<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 							<span>c-btnWithIcon</span>
 						</a>
 					</div>
@@ -209,28 +209,28 @@
 					<div class="content__hero">
 						<h3>--stroke --small --primary</h3>
 						<a href="#" class="c-btnWithIcon --primary --small --stroke">
-							<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+							<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 							<span>c-btnWithIcon</span>
 						</a>
 					</div>
 					<div class="content__hero">
 						<h3>--stroke --small --green</h3>
 						<a href="#" class="c-btnWithIcon --green --small --stroke">
-							<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+							<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 							<span>c-btnWithIcon</span>
 						</a>
 					</div>
 					<div class="content__hero">
 						<h3>--stroke --small --secondary</h3>
 						<a href="#" class="c-btnWithIcon --secondary --small --stroke">
-							<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+							<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 							<span>c-btnWithIcon</span>
 						</a>
 					</div>
 					<div class="content__hero">
 						<h3>--stroke --small --disabled</h3>
 						<a href="#" class="c-btnWithIcon --disabled --small --stroke">
-							<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+							<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 							<span>c-btnWithIcon</span>
 						</a>
 					</div>
@@ -573,7 +573,7 @@
 						<ul class="c-infosContato">
 							<li>
 								<a href="#">
-									<i><?php include('media/img/icons/icon_phone.svg'); ?></i>
+									<i><?php include('media/img/icons/icon_box_2.svg'); ?></i>
 									<span class="caption">(48) 999.999.999</span>
 								</a>
 							</li>
@@ -612,7 +612,9 @@
 							<li><a href="#"><?php include("media/img/icons/social/social_twitter.svg");?></a></li>
 							<li><a href="#"><?php include("media/img/icons/social/social_whatsapp.svg");?></a></li>
 							<li><a href="#"><?php include("media/img/icons/social/social_youtube.svg");?></a></li>
+							<li><a href="#"><?php include("media/img/icons/social/social_pinterest.svg");?></a></li>
 							<li><a href="#"><?php include("media/img/icons/social/social_share.svg");?></a></li>
+							<li><a href="#"><?php include("media/img/icons/social/social_blogger.svg");?></a></li>
 						</ul>
 					</div>
 					<div class="content__hero">
@@ -628,6 +630,8 @@
 							<li><a href="#"><?php include("media/img/icons/social/social_whatsapp.svg");?></a></li>
 							<li><a href="#"><?php include("media/img/icons/social/social_youtube.svg");?></a></li>
 							<li><a href="#"><?php include("media/img/icons/social/social_share.svg");?></a></li>
+							<li><a href="#"><?php include("media/img/icons/social/social_pinterest.svg");?></a></li>
+							<li><a href="#"><?php include("media/img/icons/social/social_blogger.svg");?></a></li>
 						</ul>
 					</div>
 					<div class="content__hero">
@@ -643,6 +647,8 @@
 							<li><a href="#"><?php include("media/img/icons/social/social_whatsapp.svg");?></a></li>
 							<li><a href="#"><?php include("media/img/icons/social/social_youtube.svg");?></a></li>
 							<li><a href="#"><?php include("media/img/icons/social/social_share.svg");?></a></li>
+							<li><a href="#"><?php include("media/img/icons/social/social_pinterest.svg");?></a></li>
+							<li><a href="#"><?php include("media/img/icons/social/social_blogger.svg");?></a></li>
 						</ul>
 					</div>
 				</div>
@@ -665,6 +671,8 @@
 							<li><a href="#"><?php include("media/img/icons/social/social_whatsapp.svg");?></a></li>
 							<li><a href="#"><?php include("media/img/icons/social/social_youtube.svg");?></a></li>
 							<li><a href="#"><?php include("media/img/icons/social/social_share.svg");?></a></li>
+							<li><a href="#"><?php include("media/img/icons/social/social_pinterest.svg");?></a></li>
+							<li><a href="#"><?php include("media/img/icons/social/social_blogger.svg");?></a></li>
 						</ul>
 					</div>
 					<div class="content__hero">
@@ -680,6 +688,8 @@
 							<li><a href="#"><?php include("media/img/icons/social/social_whatsapp.svg");?></a></li>
 							<li><a href="#"><?php include("media/img/icons/social/social_youtube.svg");?></a></li>
 							<li><a href="#"><?php include("media/img/icons/social/social_share.svg");?></a></li>
+							<li><a href="#"><?php include("media/img/icons/social/social_pinterest.svg");?></a></li>
+							<li><a href="#"><?php include("media/img/icons/social/social_blogger.svg");?></a></li>
 						</ul>
 					</div>
 					<div class="content__hero">
@@ -695,6 +705,8 @@
 							<li><a href="#"><?php include("media/img/icons/social/social_whatsapp.svg");?></a></li>
 							<li><a href="#"><?php include("media/img/icons/social/social_youtube.svg");?></a></li>
 							<li><a href="#"><?php include("media/img/icons/social/social_share.svg");?></a></li>
+							<li><a href="#"><?php include("media/img/icons/social/social_pinterest.svg");?></a></li>
+							<li><a href="#"><?php include("media/img/icons/social/social_blogger.svg");?></a></li>
 						</ul>
 					</div>
 				</div>

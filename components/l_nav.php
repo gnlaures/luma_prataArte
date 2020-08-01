@@ -133,10 +133,12 @@
 							class="caption">(41) 98806-9129</span></a></li>
 		</ul>
 		<ul class="c-socialList --default --white">
-			<li><a href="#"><?php include("media/img/icons/social/social_facebook.svg"); ?></a></li>
-			<li><a href="#"><?php include("media/img/icons/social/social_google.svg"); ?></a></li>
-			<li><a href="#"><?php include("media/img/icons/social/social_instagram.svg"); ?></a></li>
-			<li><a href="#"><?php include("media/img/icons/social/social_link.svg"); ?></a></li>
+			<li><a href="#"><img src="media/img/icons/social/social_facebook-white.svg"></a></li>
+			<li><a href="#"><img src="media/img/icons/social/social_twitter-white.svg"></a></li>
+			<li><a href="#"><img src="media/img/icons/social/social_youtube-white.svg"></a></li>
+			<li><a href="#"><img src="media/img/icons/social/social_pinterest-white.svg"></a></li>
+			<li><a href="#"><img src="media/img/icons/social/social_instagram-white.svg"></a></li>
+			<li><a href="#"><img src="media/img/icons/social/social_blogger-white.svg"></a></li>
 		</ul>
 	</div>
 	<div class="l-nav__maskMenu maskAll"></div>

@@ -151,6 +151,7 @@
 						</div>
 					</div>
 				</li>
+				<li class="u-dnone"><button class="c-btn --mutedGray" id="btn__clearFilter">Limpar Filtro</button></li>
 			</ul>
 			<div class="s-filters__end">
 				<button class="c-btn --primary" id="btn__filter">Filtrar</button>
