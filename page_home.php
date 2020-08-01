@@ -81,7 +81,7 @@
 			<div class="s-homeInstagram__title">
 				<h2>Siga a <strong>@prataearte</strong><br>nas redes sociais</h2>
 				<a href="#">
-					<?php include('media/img/icons/social/social_instagram.svg'); ?>
+					<img src="media/img/icons/social/social_instagram-white.svg" alt="@prataearte">
 				</a>
 			</div>
 			<div class="s-homeInstagram__grid">
