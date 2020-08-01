@@ -1,2 +1,0 @@
-if ($('.l-headerHome').length) {
-}

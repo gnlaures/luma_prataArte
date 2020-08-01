@@ -478,3 +478,76 @@
 		</div>
 	</div>
 </nav>
+
+<div class="l-modal l-modal__search">
+	<div class="l-modal__close">
+		<span class="caption">Fechar</span>
+		<span class="x">X</span>
+	</div>
+	<div class="l-modal__content">
+		<div class="u-container">
+			<div class="search__input">
+				<div class="c-search">
+					<input type="text" placeholder="Que Jóia você procura?">
+					<button></button>
+				</div>
+			</div>
+			<div class="search__suggestions">
+				<span class="title"><strong>Aproveite</strong> as sugestões Prata e Arte</span>
+				<ul class="c-responsiveGrid"
+						data-maxw-breaks="1000, 670"
+						data-maxw-cols="2, 1"
+						data-cols-init="3">
+					<li>
+						<a href="#" class="c-cardProduct --reverse">
+							<div class="c-cardProduct__resume">
+								<div class="c-smallCardResume --withTopDetail">
+									<div class="c-smallCardResume__title"><h2>Anel de prata <strong>com brilhantes</strong></h2></div>
+									<div class="c-smallCardResume__price">
+										<span class="times">3x</span>
+										<span class="price">R$ 258,30</span>
+									</div>
+								</div>
+							</div>
+							<div class="c-cardProduct__figure">
+								<img src="media/img/content/product_22.png" alt="Anel de prata com brilhantes">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="c-cardProduct --reverse">
+							<div class="c-cardProduct__resume">
+								<div class="c-smallCardResume --withTopDetail">
+									<div class="c-smallCardResume__title"><h2>Anel de prata <strong>com brilhantes</strong></h2></div>
+									<div class="c-smallCardResume__price">
+										<span class="times">3x</span>
+										<span class="price">R$ 258,30</span>
+									</div>
+								</div>
+							</div>
+							<div class="c-cardProduct__figure">
+								<img src="media/img/content/product_22.png" alt="Anel de prata com brilhantes">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="c-cardProduct --reverse">
+							<div class="c-cardProduct__resume">
+								<div class="c-smallCardResume --withTopDetail">
+									<div class="c-smallCardResume__title"><h2>Anel de prata <strong>com brilhantes</strong></h2></div>
+									<div class="c-smallCardResume__price">
+										<span class="times">3x</span>
+										<span class="price">R$ 258,30</span>
+									</div>
+								</div>
+							</div>
+							<div class="c-cardProduct__figure">
+								<img src="media/img/content/product_22.png" alt="Anel de prata com brilhantes">
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

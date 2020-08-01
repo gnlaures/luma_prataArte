@@ -1,6 +1,7 @@
 // c-cardProduct
 @media screen and (max-width: 470px) {
 	.c-cardProduct {
+		justify-content: center;
 		flex-wrap: wrap;
 		padding: 10px;
 		&__resume {

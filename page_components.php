@@ -1,5 +1,3 @@
-<?php $h1 = 'Components'; include('components/l_headerInner.php'); ?>
-
 <main id="page__components">
 	<section class="s-btns">
 		<h1>Buttons</h1>

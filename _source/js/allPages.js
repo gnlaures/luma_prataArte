@@ -152,6 +152,22 @@ if ($('.l-nav').length) {
         $('.l-nav__support .c-subMenu').removeClass('is-active');
     })
 
+
+    // SEARCH
+    $('.l-nav__search').on('click', function () {
+        $('body').addClass('u-overflowBlocked');
+        $('.l-modal__search').addClass('is-active');
+        setTimeout(function(){
+            $('.l-modal .c-search input').focus();
+        }, 500);
+    })
+
+}
+if ($('.l-modal').length) {
+    $('.l-modal__close').on('click', function() {
+        $('.l-modal').removeClass('is-active');
+        $('body').removeClass('u-overflowBlocked');
+    });
 }
 
 // -> s-

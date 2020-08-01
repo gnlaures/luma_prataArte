@@ -53,8 +53,8 @@
 	$js_allPages = 'dist/allPages-min.js';
 	$js_components = 'dist/components-min.js';
 	
-	$load_this_js = array($js_jquery, $js_libraries, $js_components, $js_allPages, $js_innerPages);
-	$load_this_css = array($css_libraries, $css_allPages, $css_innerPages);
+	$load_this_js = array($js_jquery, $js_libraries, $js_components, $js_allPages);
+	$load_this_css = array($css_libraries, $css_allPages);
 
 	# carrega os estilos/scripts por página
 	# muda titulo de cada página
@@ -85,8 +85,8 @@
 			$file = 'page_home.php';
 			$title_page = $title;
 			$home = true;
-			$load_this_js = array($js_jquery, $js_libraries, $js_components, $js_allPages, $js_homePage);
-			$load_this_css = array($css_libraries, $css_allPages, $css_homePage);
+			$load_this_js = array($js_jquery, $js_libraries, $js_components, $js_allPages);
+			$load_this_css = array($css_libraries, $css_allPages);
 			break;
 	}
 

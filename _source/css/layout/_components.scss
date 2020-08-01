@@ -1414,6 +1414,25 @@ $c_btnIcon_maxWidth: 220px;
 	&:hover {
 		border: 1px solid $primary;
 	}
+    
+    &.--reverse {
+        .c-cardProduct__figure {
+            @include flexWidth(80px);
+            order: 1;
+            img {
+                width: 100%;
+                min-width: 100%;
+                height: 116px;
+                margin: 0 auto;
+            }
+        }
+        .c-cardProduct__resume {
+            flex: 1 1 auto;
+            padding-top: 0;
+            padding-left: 10px;
+            order: 2;
+        }
+    }
 }
 .c-cardProductFull {
     // full card
