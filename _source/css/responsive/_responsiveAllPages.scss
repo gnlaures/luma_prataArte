@@ -535,10 +535,23 @@
 @media screen and (max-width: 600px) {
     .l-headerCategorie {
         img {
-            min-height: 116px;
+            min-height: 120px;
+            object-position: 80%;
         }
         h1 {
-            
+            @include letterSpacing(0);
+            font-size: 16px;
+            display: inline-block;
+            width: auto;
+            top: 30px;
+            left: 30px;
+            font-weight: $fwRegular;
+            text-align: left;
+            strong {
+                font-weight: $fwBold;
+                width: 100%;
+                display: block;
+            }
         }
     }
 }
