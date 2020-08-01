@@ -10,6 +10,13 @@ $(window).on('hashchange', function () {
 });
 
 // layout and sections scripts
+// -> #
+if ($('#page__home').length) {
+    $('body').addClass('is-homePage');
+} else {
+    $('body').addClass('is-innerPage');
+}
+
 // -> l-
 if ($('.l-nav').length) {
     var propsNav = {

@@ -384,6 +384,13 @@ $c_btnIcon_maxWidth: 220px;
             background: $secondaryDark;
         }
     }
+    &.--mutedGray {
+        background: $white2;
+        color: $text;
+        &:hover {
+            background: $mutedGray;
+        }
+    }
     &.--disabled {
         background: $lightGray;
         color: $baseGray;
@@ -748,7 +755,7 @@ $c_btnIcon_maxWidth: 220px;
         position: fixed;
         top: 0;
         left: 0;
-        background: rgba(0, 0, 0, 0.10);
+        background: rgba(0, 0, 0, 0.03);
         z-index: 1;
         display: none;
     }
@@ -1330,6 +1337,9 @@ $c_btnIcon_maxWidth: 220px;
         .price {
             font-size: 24px;
         }
+    }
+    .c-btn {
+        margin-top: 10px;
     }
     &.--alignLeft {
     

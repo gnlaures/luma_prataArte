@@ -29,6 +29,10 @@
 		&__price {
 			justify-content: center;
 		}
+		.c-btn {
+			margin-left: auto;
+			margin-right: auto;
+		}
 		&.--withTopDetail {
 			&:before {
 				left: 0;
