@@ -4,11 +4,12 @@
 		<h1>Coleção de <strong>Anéis</strong></h1>
 	</header>
 	<section class="s-filters">
-		<div class="u-container">
+		<form action="#" class="u-container u-containerFlex">
 			<ul class="filters__menu">
 				<li class="c-subMenu">
 					<span class="c-subMenu__mask"></span>
 					<a class="c-subMenu__call js-subMenuPrimary">Aro</a>
+					<input type="text" class="u-dnone" id="formFilter__aro">
 					<div class="c-subMenu__content">
 						<div class="content__hero">
 							<div class="content__options">
@@ -35,7 +36,11 @@
 					</div>
 				</li>
 			</ul>
-		</div>
+			<div class="filters__end">
+				<button class="c-btn --primary" id="btn__filter">Filtrar</button>
+				<button class="c-btn --primary" id="btn__clearFilter">Limpar Filtro</button>
+			</div>
+		</form>
 	</section>
 	<section class="s-headResults">
 		<ul class="breadCrumb">

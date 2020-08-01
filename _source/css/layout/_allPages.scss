@@ -631,6 +631,34 @@ main {
 		@include paragrafos($fs: 13px);
 	}
 }
+.l-headerCategorie {
+	display: block;
+	position: relative;
+	img {
+		display: block;
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+		max-height: 230px;
+		min-width: 150px;
+	}
+	h1 {
+		@include transforms(translateY(-50%), center);
+		@include letterSpacing(400);
+		display: block;
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		color: $text;
+		font-size: 22px;
+		text-transform: uppercase;
+		font-weight: $fwLight;
+		strong {
+			font-weight: $fwMedium;
+		}
+	}
+}
 
 // s-
 .s-newCollection {
@@ -1016,4 +1044,7 @@ main {
 			}
 		}
 	}
+}
+.s-filters {
+
 }
