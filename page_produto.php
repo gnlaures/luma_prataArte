@@ -177,22 +177,59 @@
 	</section>
 	<section class="s-productCombination">
 		<div class="u-container">
-			<h2><div><span>Compre</span> esta combinação</div></h2>
+			<h2 class="titleSection"><div><span>Compre</span> esta combinação</div></h2>
 			<ul>
 				<li>
-					// card product
+					<a href="#" class="c-cardProduct --reverse">
+						<div class="c-cardProduct__resume">
+							<div class="c-smallCardResume">
+								<div class="c-smallCardResume__title"><h2>Anel de prata <strong>com brilhantes</strong></h2></div>
+								<div class="c-smallCardResume__price">
+									<span class="times">3x</span>
+									<span class="price">R$ 258,30</span>
+								</div>
+							</div>
+						</div>
+						<div class="c-cardProduct__figure">
+							<img src="media/img/content/product_20.png" alt="Anel de prata com brilhantes">
+						</div>
+					</a>
+				</li>
+				<li class="liSpacer">
+					+
 				</li>
 				<li>
-					// +
+					<a href="#" class="c-cardProduct --reverse">
+						<div class="c-cardProduct__resume">
+							<div class="c-smallCardResume">
+								<div class="c-smallCardResume__title"><h2>Anel de prata <strong>com brilhantes</strong></h2></div>
+								<div class="c-smallCardResume__price">
+									<span class="times">3x</span>
+									<span class="price">R$ 258,30</span>
+								</div>
+							</div>
+						</div>
+						<div class="c-cardProduct__figure">
+							<img src="media/img/content/product_17.png" alt="Anel de prata com brilhantes">
+						</div>
+					</a>
 				</li>
-				<li>
-					// card product
+				<li class="liSpacer">
+					=
 				</li>
-				<li>
-					// =
-				</li>
-				<li>
-					// card final value
+				<li class="liFinal">
+					<div class="c-saleProduct --small">
+						<div class="c-saleProduct__price">
+							<div class="priceNow">
+								<span class="num">R$ 500,00</span>
+							</div>
+							<div class="pricePartial">Em até <strong><span>6x de R$ 83,33</span></strong></div>
+							<div class="priceCash"><span>Ou <strong>R$ 475,00 à vista</strong></span><span> com 5% de desconto.</span></div>
+						</div>
+						<div class="c-saleProduct__shopNow">
+							<a href="#" class="c-btn --green">Compre Agora</a>
+						</div>
+					</div>
 				</li>
 			</ul>
 		</div>

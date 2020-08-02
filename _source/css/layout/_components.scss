@@ -1758,6 +1758,8 @@ $c_btnIcon_maxWidth: 220px;
                     text-transform: uppercase;
                     padding-left: 5px;
                     cursor: pointer;
+                    position: relative;
+                    top: 1px;
                 }
                 input {
                     @include flexWidth(12px);
@@ -1768,6 +1770,7 @@ $c_btnIcon_maxWidth: 220px;
                     cursor: pointer;
                     &:checked {
                         background: $primary;
+                        border: 1px solid $primary;
                     }
                 }
             }
@@ -1807,6 +1810,22 @@ $c_btnIcon_maxWidth: 220px;
     &.is-active {
         .c-saleProduct__second {
             display: flex;
+        }
+    }
+    
+    &.--small {
+        display: block;
+        .c-saleProduct__price {
+            margin-bottom: 10px;
+            &:after {
+                display: none;
+            }
+            .num {
+                font-size: 28px;
+            }
+            .priceCash {
+                margin-top: 5px;
+            }
         }
     }
     
