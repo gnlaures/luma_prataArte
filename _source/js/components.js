@@ -144,3 +144,50 @@ if ($('.c-cart').length) {
         $('.l-nav__cart .c-subMenu').removeClass('is-active');
     });
 }
+
+// saleProduct
+if ($('.c-saleProduct').length) {
+    var propsSale = {
+        btn_buyNow: $('.c-saleProduct__shopNow > .c-btn'),
+        btn_buyPairInit: $('.c-saleProduct__first .c-saleProduct__shopPair > .c-btn'),
+        btn_buyPairFinal: $('.c-saleProduct__second .c-saleProduct__shopPair > .c-btn'),
+
+        closeSecond: $('.c-saleProduct__close'),
+        tabSecondHeadItem: $('.c-saleProduct__partsMenu a'),
+        tabSecondContentItem: $('.c-saleProduct__partsContent'),
+    };
+
+    function openSecond(el) {
+        el.closest('.c-saleProduct').addClass('is-active');
+    }
+    function closeSecond() {
+        $('.c-saleProduct').removeClass('is-active');
+    }
+
+    // open second step
+    propsSale.btn_buyNow.on('click', function(e) {
+        e.preventDefault();
+        openSecond($(this));
+    });
+    propsSale.btn_buyPairInit.on('click', function(e) {
+        e.preventDefault();
+        openSecond($(this));
+    });
+
+    // close
+    propsSale.closeSecond.on('click', function (e) {
+        e.preventDefault();
+        closeSecond();
+    });
+
+    // open tab
+    propsSale.tabSecondHeadItem.on('click', function (e) {
+        e.preventDefault();
+        $(this).closest('.c-saleProduct__partsMenu').find('a').removeClass('is-active');
+        $(this).addClass('is-active');
+        var partsContentDestiny = $(this).attr('data-part-menu');
+        console.log(partsContentDestiny);
+        $(".c-saleProduct__partsContent").hide('slow');
+        $(".c-saleProduct__partsContent[data-part-menu="+partsContentDestiny+"]").show('slow');
+    })
+}

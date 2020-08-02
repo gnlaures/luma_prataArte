@@ -192,3 +192,14 @@ if (('.s-suggestionsProduct').length) {
         }
     }).mount();
 }
+if ($('.s-introProduct').length) {
+    $('.s-introProduct .c-saleProduct__shopNow > .c-btn').on('click', function() {
+       $('.s-introProduct').addClass('is-active');
+    });
+    $('.s-introProduct .c-saleProduct__shopPair > .c-btn').on('click', function() {
+        $('.s-introProduct').addClass('is-active');
+    });
+    $('.s-introProduct .c-saleProduct__close').on('click', function() {
+        $('.s-introProduct').removeClass('is-active');
+    });
+}

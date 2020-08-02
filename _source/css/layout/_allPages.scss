@@ -1414,7 +1414,137 @@ main {
 	}
 }
 
+.s-introProduct {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 60px 0;
+	.u-containerFlex {
+		@include transition();
+		justify-content: space-between;
+	}
+	&__resume {
+		@include flexWidth(255px);
+		h1 {
+			@include h1_inner();
+			margin-bottom: 20px;
+		}
+		p {
+			@include paragrafos();
+		}
+		ul {
+			display: block;
+			margin-top: 30px;
+			position: relative;
+			&:before {
+				@include square($primary, 2.5px);
+				width: 33px;
+				position: absolute;
+				top: -15px;
+				left: 0;
+			}
+			li {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+	&__figure {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		img {
+			display: block;
+			width: auto;
+			max-width: 100%;
+			max-height: 600px;
+			object-position: center;
+			object-fit: contain;
+		}
+	}
+	&__sale {
+		flex: 0 1 auto;
+		&.is-active {
+			@include flexWidth(500px);
+		}
+	}
+	
+	&.is-active {
+		.u-containerFlex {
+			max-width: 1400px;
+		}
+	}
+}
+.s-fullBanner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 780px;
+	max-height: 100vh;
+	min-height: 500px;
+	position: relative;
+	padding: 20px;
+	> img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.u-containerFlex {
+		align-items: center;
+		justify-content: flex-end;
+	}
+	.c-saleProduct {
+		width: fit-content;
+	}
+}
+.s-productCombination {
+	h2 {
+		display: block;
+		position: relative;
+		width: 100%;
+		text-align: center;
+		&:before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background: #fbe7d9;
+			position: absolute;
+			top: 17px;
+			left: 0;
+			z-index: 1;
+		}
+		div {
+			display: inline-block;
+			background: $white;
+			font-size: 15px;
+			text-transform: uppercase;
+			color: $text;
+			padding: 0 15px;
+			position: relative;
+			z-index: 2;
+			span {
+				color: $primary;
+				font-weight: $fwMedium;
+			}
+		}
+	}
+}
+
 // #
+#page__produto {
+	.s-suggestionsProduct {
+		margin-top: 0;
+		padding: 30px 0;
+	}
+}
 #page__searchResult {
 	padding-top: 2px;
 }
