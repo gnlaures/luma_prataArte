@@ -203,3 +203,32 @@ if ($('.s-introProduct').length) {
         $('.s-introProduct').removeClass('is-active');
     });
 }
+if ($('.s-mobileFixedProduct').length) {
+    // position on scroll - fix nav android
+    $(window).on('scroll', function() {
+        if (is.mobile()) {
+            if ($('.l-nav').hasClass('scrolledUp')) {
+                $('.s-mobileFixedProduct').addClass('is-mobile');
+            } else {
+                $('.s-mobileFixedProduct').removeClass('is-mobile');
+            }
+        }
+    });
+
+    // toggle price
+    $('.s-mobileFixedProduct__parts a').on('click', function(e) {
+        e.preventDefault();
+        $('.s-mobileFixedProduct__parts a').removeClass('is-active');
+        $(this).addClass('is-active');
+        //
+        var hrefThis = $(this).attr('href');
+        $('.s-mobileFixedProduct__price > div').addClass('u-dnone');
+        $(hrefThis).removeClass('u-dnone');
+    });
+
+    // open modal
+    $('.s-mobileFixedProduct__btn .c-btn').on('click', function () {
+        $('body').addClass('u-overflowBlocked');
+        $('.l-modal__mobileProductParts').addClass('is-active');
+    })
+}

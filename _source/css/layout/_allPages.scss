@@ -732,6 +732,21 @@ main {
 		}
 	}
 }
+.l-modal__mobileProductParts {
+	.c-saleProduct {
+		@include flexWidth(100%);
+	}
+	.c-saleProduct__second {
+		@include flexWidth(100%);
+		display: flex;
+		padding-left: 0;
+		margin-left: 0;
+		border-left: 0;
+	}
+	.c-saleProduct__close {
+		display: none;
+	}
+}
 
 // s-
 .s-newCollection {
@@ -1497,6 +1512,8 @@ main {
 		position: absolute;
 		top: 0;
 		left: 0;
+		object-fit: cover;
+		object-position: center;
 	}
 	.u-containerFlex {
 		align-items: center;
@@ -1547,6 +1564,7 @@ main {
 		flex-direction: row;
 		align-items: center;
 		justify-content: flex-start;
+		padding-top: 15px;
 		li {
 			flex: 1 1 auto;
 			max-width: 400px;
@@ -1574,10 +1592,141 @@ main {
 			flex: 1 1 auto;
 		}
 	}
+	
+	.c-smallCardResume__price:after {
+		display: none;
+	}
+}
+
+.s-mobileFixedProduct {
+	@include calc(top, 100vh, '-', 70px);
+	@include transition();
+	position: sticky;
+	left: 0;
+	z-index: 30;
+	width: 100%;
+	height: 70px;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-end;
+	background: $white;
+	&__price {
+		flex: 1 1 auto;
+		padding-right: 10px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+		height: 70px;
+		div {
+			@include flexWidth(100%);
+			display: block;
+		}
+		.priceOld {
+			font-size: 14px;
+			line-height: 16px;
+			text-align: right;
+			color: $black;
+			font-weight: $fwRegular;
+		}
+		.priceNow {
+			color: $green;
+			font-weight: $fwRegular;
+			font-size: 20px;
+			text-align: right;
+			span {
+				font-size: 14px;
+			}
+		}
+		.priceCash {
+			font-size: 12px;
+			line-height: 14px;
+			text-align: right;
+			color: $text;
+			font-weight: $fwRegular;
+		}
+	}
+	&__parts {
+		@include flexWidth(80px);
+		border-right: 1px solid $white;
+		li {
+			display: block;
+			width: 100%;
+			border-bottom: 1px solid $white;
+			&:last-of-type {
+				border-bottom: 0;
+			}
+		}
+		a {
+			display: block;
+			height: 35px;
+			line-height: 35px;
+			text-align: center;
+			background: $mutedGray;
+			color: $text;
+			font-size: 12px;
+			text-transform: uppercase;
+			font-weight: $fwBold;
+			cursor: pointer;
+			&.is-active {
+				background: $greenDark;
+				color: $white;
+			}
+		}
+	}
+	&__btn {
+		@include flexWidth(114px);
+		.c-btn {
+			@include flexWidth(100%);
+			height: 70px;
+			line-height: 70px;
+			padding: 0;
+			font-size: 11px;
+		}
+	}
+	&.is-mobile {
+		@include calc(top, 100vh, '-', 125px);
+	}
+}
+.s-mobileDescription {
+	padding: 40px 0;
+	p {
+		@include paragrafos($fs: 14px);
+		text-align: center;
+	}
+}
+.s-mobileTopics {
+	ul {
+		li {
+			margin-bottom: 20px;
+			text-align: center;
+			> a {
+				text-align: center;
+				@include uppercaseSmallTexts($text, 12px);
+				span {
+					color: $primary;
+				}
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			> span {
+				color: $text;
+				font-size: 12px;
+			}
+		}
+	}
 }
 
 // #
 #page__produto {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	> section {
+		@include flexWidth(100%);
+	}
 	.s-suggestionsProduct {
 		border-top: 1px solid $white3;
 		margin-top: 0;

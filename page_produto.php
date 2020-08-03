@@ -47,7 +47,7 @@
 							<li><a href="#">Medidor de <span>Anéis</span></a></li>
 						</ul>
 					</div>
-					<div class="c-saleProduct__second">
+					<form class="c-saleProduct__second" action="#">
 						<div class="c-saleProduct__close">X</div>
 						<ul class="c-saleProduct__partsMenu">
 							<li><a href="#" data-part-menu="1" class="is-active">1º Peça</a></li>
@@ -164,15 +164,49 @@
 							</div>
 						</div>
 						<div class="c-saleProduct__shopPair">
-							<a href="#" class="c-btn --primary --disabled">Compre o par</a>
+							<button class="c-btn --primary --disabled">Compre o par</button>
 							<div class="c-saleProduct__secure">
 								<i><img src="media/img/icons/icon_lock.svg" alt="Compra 100% Segura"></i>
 								<span>Compra 100% segura</span>
 							</div>
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
+		</div>
+	</section>
+	<section class="u-dnone s-mobileTopics">
+		<div class="u-container">
+			<ul>
+				<li><a href="#">Incluir na <span>Lista de Presente</span></a></li>
+				<li><a href="#">Medidor de <span>Anéis</span></a></li>
+				<li><span>Ref.: 000215487</span></li>
+			</ul>
+		</div>
+	</section>
+	<section class="u-dnone s-mobileFixedProduct">
+		<div class="s-mobileFixedProduct__price">
+			<div id="price1">
+				<div class="priceOld">De R$ 380,00</div>
+				<div class="priceNow"><span>Por:</span> R$ 258,30</div>
+				<div class="priceCash">ou 10x R$ 25,83</div>
+			</div>
+			<div id="price2" class="u-dnone">
+				<div class="priceNow"><span>Por:</span> R$ 500,30</div>
+				<div class="priceCash">ou 10x R$ 50,83</div>
+			</div>
+		</div>
+		<ul class="s-mobileFixedProduct__parts">
+			<li><a href="#price1" class="is-active">1 Peça</a></li>
+			<li><a href="#price2">2 Peças</a></li>
+		</ul>
+		<div class="s-mobileFixedProduct__btn">
+			<a href="#" class="c-btn --green">Compre Agora</a>
+		</div>
+	</section>
+	<section class="u-dnone s-mobileDescription">
+		<div class="u-container">
+			<p>O Anel De Prata envelhecido trabalhado foi confeccionado pensando nos homens que gostam de acessórios mais chamativos e marcantes. O anel é grande, opulento e cheio de estilo. Seu design é todo trabalhado em linhas. É como se tivéssemos um retângulo dentro do outro. Seu visual nunca mais será o mesmo com essa joia!</p>
 		</div>
 	</section>
 	<section class="s-productCombination">
@@ -195,7 +229,7 @@
 						</div>
 					</a>
 				</li>
-				<li class="liSpacer">
+				<li class="liSpacer liPlus">
 					+
 				</li>
 				<li>
@@ -214,16 +248,18 @@
 						</div>
 					</a>
 				</li>
-				<li class="liSpacer">
+				<li class="liSpacer liEqual">
 					=
 				</li>
 				<li class="liFinal">
 					<div class="c-saleProduct --small">
 						<div class="c-saleProduct__price">
-							<div class="priceNow">
-								<span class="num">R$ 500,00</span>
+							<div>
+								<div class="priceNow">
+									<span class="num">R$ 500,00</span>
+								</div>
+								<div class="pricePartial">Em até <strong><span>6x de R$ 83,33</span></strong></div>
 							</div>
-							<div class="pricePartial">Em até <strong><span>6x de R$ 83,33</span></strong></div>
 							<div class="priceCash"><span>Ou <strong>R$ 475,00 à vista</strong></span><span> com 5% de desconto.</span></div>
 						</div>
 						<div class="c-saleProduct__shopNow">
@@ -264,7 +300,7 @@
 						<li><a href="#">Medidor de <span>Anéis</span></a></li>
 					</ul>
 				</div>
-				<div class="c-saleProduct__second">
+				<form class="c-saleProduct__second" action="#">
 					<div class="c-saleProduct__close">X</div>
 					<ul class="c-saleProduct__partsMenu">
 						<li><a href="#" data-part-menu="1" class="is-active">1º Peça</a></li>
@@ -381,13 +417,13 @@
 						</div>
 					</div>
 					<div class="c-saleProduct__shopPair">
-						<a href="#" class="c-btn --primary --disabled">Compre o par</a>
+						<button class="c-btn --primary --disabled">Compre o par</button>
 						<div class="c-saleProduct__secure">
 							<i><img src="media/img/icons/icon_lock.svg" alt="Compra 100% Segura"></i>
 							<span>Compra 100% segura</span>
 						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 	</section>
@@ -455,3 +491,138 @@
 		</div>
 	</section>
 </main>
+
+<div class="l-modal l-modal__mobileProductParts">
+	<div class="l-modal__close">
+		<span class="caption">Fechar</span>
+		<span class="x">X</span>
+	</div>
+	<div class="l-modal__content">
+		<div class="c-saleProduct">
+			<form class="c-saleProduct__second" action="#">
+				<div class="c-saleProduct__close">X</div>
+				<ul class="c-saleProduct__partsMenu">
+					<li><a href="#" data-part-menu="1" class="is-active">1º Peça</a></li>
+					<li><a href="#" data-part-menu="2">2º Peça</a></li>
+				</ul>
+				<div class="c-saleProduct__partsContent" data-part-menu="1" style="display: none">
+					<div class="c-saleProduct__choice">
+						<select name="part1_select" id="cardModal_part1_select">
+							<option value="selecione" selected disabled>Escolha o Aro</option>
+							<option value="lorem">Lorem Ipsum</option>
+							<option value="lorem">Lorem Ipsum</option>
+							<option value="lorem">Lorem Ipsum</option>
+							<option value="lorem">Lorem Ipsum</option>
+						</select>
+					</div>
+					<ul class="c-saleProduct__choiceOptions">
+						<li>
+							<h3>Caixa especial + R$ 12,00</h3>
+							<div class="optionsHero">
+								<div>
+									<input type="radio" id="cardModal_part1_op1_s" name="cardModal_part1_op1" value="Sim">
+									<label for="cardModal_part1_op1_s">Sim</label>
+								</div>
+								<div>
+									<input type="radio" id="cardModal_part1_op1_n" name="cardModal_part1_op1" value="Não">
+									<label for="cardModal_part1_op1_n">Não</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h3>Flanela Mágica + R$ 5,00</h3>
+							<div class="optionsHero">
+								<div>
+									<input type="radio" id="cardModal_part1_op2_s" name="cardModal_part1_op2" value="Sim">
+									<label for="cardModal_part1_op2_s">Sim</label>
+								</div>
+								<div>
+									<input type="radio" id="cardModal_part1_op2_n" name="cardModal_part1_op2" value="Não">
+									<label for="cardModal_part1_op2_n">Não</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h3>Flanela Mágica + R$ 5,00</h3>
+							<div class="optionsHero">
+								<div>
+									<input type="radio" id="cardModal_part1_op3_s" name="cardModal_part1_op3" value="Sim">
+									<label for="cardModal_part1_op3_s">Sim</label>
+								</div>
+								<div>
+									<input type="radio" id="cardModal_part1_op3_n" name="cardModal_part1_op3" value="Não">
+									<label for="cardModal_part1_op3_n">Não</label>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="c-saleProduct__ringText">
+						<input type="text" placeholder="Escreva aqui a gravação interna">
+					</div>
+				</div>
+				<div class="c-saleProduct__partsContent" data-part-menu="2">
+					<div class="c-saleProduct__choice">
+						<select name="part2_select" id="cardModal_part2_select">
+							<option value="selecione" selected disabled>Escolha o Aro</option>
+							<option value="lorem">Lorem Ipsum</option>
+							<option value="lorem">Lorem Ipsum</option>
+							<option value="lorem">Lorem Ipsum</option>
+							<option value="lorem">Lorem Ipsum</option>
+						</select>
+					</div>
+					<ul class="c-saleProduct__choiceOptions">
+						<li>
+							<h3>Caixa especial + R$ 12,00</h3>
+							<div class="optionsHero">
+								<div>
+									<input type="radio" id="cardModal_part2_op1_s" name="cardModal_part2_op1" value="Sim">
+									<label for="cardModal_part2_op1_s">Sim</label>
+								</div>
+								<div>
+									<input type="radio" id="cardModal_part2_op1_n" name="cardModal_part2_op1" value="Não">
+									<label for="cardModal_part2_op1_n">Não</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h3>Flanela Mágica + R$ 5,00</h3>
+							<div class="optionsHero">
+								<div>
+									<input type="radio" id="cardModal_part2_op2_s" name="cardModal_part2_op2" value="Sim">
+									<label for="cardModal_part2_op2_s">Sim</label>
+								</div>
+								<div>
+									<input type="radio" id="cardModal_part2_op2_n" name="cardModal_part2_op2" value="Não">
+									<label for="cardModal_part2_op2_n">Não</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h3>Flanela Mágica + R$ 5,00</h3>
+							<div class="optionsHero">
+								<div>
+									<input type="radio" id="cardModal_part2_op3_s" name="cardModal_part2_op3" value="Sim">
+									<label for="cardModal_part2_op3_s">Sim</label>
+								</div>
+								<div>
+									<input type="radio" id="cardModal_part2_op3_n" name="cardModal_part2_op3" value="Não">
+									<label for="cardModal_part2_op3_n">Não</label>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="c-saleProduct__ringText">
+						<input type="text" placeholder="Escreva aqui a gravação interna">
+					</div>
+				</div>
+				<div class="c-saleProduct__shopPair">
+					<button class="c-btn --primary --disabled">Compre o par</a>
+					<div class="c-saleProduct__secure">
+						<i><img src="media/img/icons/icon_lock.svg" alt="Compra 100% Segura"></i>
+						<span>Compra 100% segura</span>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
