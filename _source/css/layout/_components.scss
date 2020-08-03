@@ -1535,6 +1535,22 @@ $c_btnIcon_maxWidth: 220px;
                 width: 100%;
             }
         }
+        &.--center {
+            margin-bottom: 10px;
+            &:after {
+                display: none;
+            }
+            > div {
+                text-align: center;
+            }
+            .priceNow {
+                justify-content: center;
+                align-items: center;
+            }
+            .priceCash {
+                margin-top: 5px;
+            }
+        }
     }
     &__shopNow {
         @include flexWidth(100%);

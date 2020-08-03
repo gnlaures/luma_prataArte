@@ -110,7 +110,7 @@
 						</div>
 						<div class="c-saleProduct__partsContent" data-part-menu="2">
 							<div class="c-saleProduct__choice">
-								<select name="part2_select" id="part2_select">
+								<select name="card1_part2_select" id="card1_part2_select">
 									<option value="selecione" selected disabled>Escolha o Aro</option>
 									<option value="lorem">Lorem Ipsum</option>
 									<option value="lorem">Lorem Ipsum</option>
@@ -308,7 +308,7 @@
 					</ul>
 					<div class="c-saleProduct__partsContent" data-part-menu="1" style="display: none">
 						<div class="c-saleProduct__choice">
-							<select name="part1_select" id="part1_select">
+							<select name="part1_select" id="card2_part1_select">
 								<option value="selecione" selected disabled>Escolha o Aro</option>
 								<option value="lorem">Lorem Ipsum</option>
 								<option value="lorem">Lorem Ipsum</option>
@@ -614,6 +614,14 @@
 					<div class="c-saleProduct__ringText">
 						<input type="text" placeholder="Escreva aqui a gravação interna">
 					</div>
+				</div>
+				<div class="c-saleProduct__price --center">
+					<div class="priceOld">De R$ 380,00</div>
+					<div class="priceNow">
+						<span class="caption">Por: R$</span>
+						<span class="num">280,00</span>
+					</div>
+					<div class="priceCash"><span>Ou <strong>R$ 266,00 à vista</strong></span><span> com 5% de desconto.</span></div>
 				</div>
 				<div class="c-saleProduct__shopPair">
 					<button class="c-btn --primary --disabled">Compre o par</a>
