@@ -5,11 +5,43 @@ body {
 }
 main {
 	background: $white2;
+	position: relative;
 }
 
 // .
 .u-maxRow {
 	padding-top: 133px;
+}
+.detail__handLeft,
+.detail__handRight {
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+.detail__handLeft {
+	background: url(#{$media_content}home_detail_hand_2.png);
+	width: 424px;
+	height: 261px;
+	left: -60px;
+	top: 780px;
+}
+.detail__handRight {
+	background: url(#{$media_content}home_detail_hand.png);
+	width: 310px;
+	height: 219px;
+	right: 0;
+	top: 122px;
+}
+.detail__handCircle {
+	@include roundedAll(50%);
+	display: block;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	z-index: 0;
+	left: 70px;
+	top: 508px;
+	border: 35px solid $white;
 }
 
 // libs
@@ -899,7 +931,7 @@ main {
 }
 .s-featuredCollection {
 	position: relative;
-	z-index: 4;
+	z-index: 3;
 	margin-top: -114px;
 	.u-container {
 		max-width: 1130px;
@@ -953,7 +985,7 @@ main {
 .s-lastFeaturedCollection {
 	display: block;
 	position: relative;
-	z-index: 2;
+	z-index: 5;
 	.u-containerFlex {
 		max-width: 930px;
 		justify-content: space-between;
@@ -1016,39 +1048,6 @@ main {
 			margin-top: 20px;
 			max-width: 200px;
 		}
-	}
-	
-	.detail__handLeft,
-	.detail__handRight {
-		display: block;
-		position: absolute;
-		z-index: 1;
-	}
-	.detail__handLeft {
-		background: url(#{$media_content}home_detail_hand_2.png);
-		width: 424px;
-		height: 261px;
-		left: -60px;
-		top: -35px;
-	}
-	.detail__handRight {
-		background: url(#{$media_content}home_detail_hand.png);
-		width: 310px;
-		height: 219px;
-		right: 0;
-		top: 122px;
-	}
-	
-	.detail__handCircle {
-		@include roundedAll(50%);
-		display: block;
-		width: 400px;
-		height: 400px;
-		position: absolute;
-		z-index: 0;
-		left: 70px;
-		top: -255px;
-		border: 35px solid $white;
 	}
 }
 .s-homeInstagram {

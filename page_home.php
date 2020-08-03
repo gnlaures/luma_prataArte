@@ -6,6 +6,8 @@
 </header>
 
 <main id="page__home">
+	<span class="detail__handLeft"></span>
+	<span class="detail__handCircle"></span>
 	<section class="s-newCollection">
 		<div class="u-container u-containerFlex">
 			<figure class="s-newCollection__figure">
@@ -55,9 +57,7 @@
 		</div>
 	</section>
 	<section class="s-lastFeaturedCollection">
-		<span class="detail__handLeft"></span>
 		<span class="detail__handRight"></span>
-		<span class="detail__handCircle"></span>
 		<div class="u-container u-containerFlex">
 			<div class="s-lastFeaturedCollection__description">
 				<h3>Marina Alvarenga</h3>
