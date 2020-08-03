@@ -463,12 +463,6 @@
         &__content {
             display: none;
         }
-        
-        .detail__handRight,
-        .detail__handLeft,
-        .detail__handCircle {
-            display: none;
-        }
     }
 }
 @media screen and (max-width: 500px) {
@@ -484,6 +478,15 @@
         p, h3, a {
             font-size: 14px;
         }
+    }
+}
+
+// details home
+@media screen and (max-width: 1140px) {
+    .detail__handRight,
+    .detail__handLeft,
+    .detail__handCircle {
+        display: none;
     }
 }
 
