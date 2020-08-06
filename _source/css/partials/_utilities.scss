@@ -40,20 +40,20 @@
 // flex containers / grids
 .u-flexContainer, .u-containerFlex {
     display: flex;
-    &.u-wrap {flex-wrap: wrap;}
-    &.u-nowrap {flex-wrap: nowrap;}
-	&.u-wrapRev {flex-wrap: wrap-reverse;}
-	&.u-jcfe {justify-content: flex-end;}
-	&.u-jcfs {justify-content: flex-start;}
-	&.u-jcsb {justify-content: space-between;}
-	&.u-jcsa {justify-content: space-around;}
-	&.u-jcc {justify-content: center;}
-	&.u-aic {align-items: center;}
-	&.u-aifs {align-items: flex-start;}
-	&.u-aife {align-items: flex-end;}
-	&.u-fdr {flex-direction: row;}
-	&.u-fdc {flex-direction: column;}
 }
+.u-wrap {flex-wrap: wrap;}
+.u-nowrap {flex-wrap: nowrap;}
+.u-wrapRev {flex-wrap: wrap-reverse;}
+.u-jcfe {justify-content: flex-end;}
+.u-jcfs {justify-content: flex-start;}
+.u-jcsb {justify-content: space-between;}
+.u-jcsa {justify-content: space-around;}
+.u-jcc {justify-content: center;}
+.u-aic {align-items: center;}
+.u-aifs {align-items: flex-start;}
+.u-aife {align-items: flex-end;}
+.u-fdr {flex-direction: row;}
+.u-fdc {flex-direction: column;}
 
 // default widths - used majority in float blocks
 .u-fw100 {@include flexWidth(100%)}

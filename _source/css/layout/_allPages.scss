@@ -541,6 +541,21 @@ main {
 		}
 	}
 }
+.l-headerInner {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 150px;
+	padding: 30px 0;
+	background: $white3;
+	border-bottom: 1px solid $mutedGray;
+	h1 {
+		@include h1_inner;
+		text-align: center;
+	}
+}
 .l-footer {
 	background: $mutedGray;
 	display: block;
@@ -1829,6 +1844,164 @@ main {
 		align-items: center;
 		justify-content: space-around;
 		padding: 20px;
+	}
+}
+#page__inner {
+	padding: 80px 0 60px 0;
+	display: block;
+	.u-containerFlex {
+		flex-wrap: wrap;
+		@include calcWidthForPositionNegative(-20px);
+	}
+	.painel-box,
+	.login-oauth {
+		display: block;
+		padding: 0 20px;
+		h2 {
+			margin-top: 0;
+		}
+	}
+	.wd-subtitle,
+	.account-data-titulo,
+	h2 {
+		color: $primary;
+		font-weight: $fwRegular;
+		text-transform: uppercase;
+		display: block;
+		position: relative;
+		font-size: 20px;
+		margin-bottom: 30px;
+		margin-top: 30px;
+		&:after {
+			@include square($size: 5px);
+			bottom: -10px;
+		}
+	}
+	form {
+		display: block;
+		width: 100%;
+		max-width: 600px;
+		margin: 0 auto;
+		fieldset {
+			margin-bottom: 20px;
+			border-bottom: 1px solid $mutedGray;
+			&:last-of-type {
+				border-bottom: 0;
+				margin-bottom: 0;
+			}
+		}
+		label {
+			font-weight: $fwBold;
+			color: $secondaryDark;
+			font-size: 14px;
+		}
+		input, select {
+			@include transition();
+			display: block;
+			border: 1px solid $mutedGray;
+			background: $white2;
+			width: 100%;
+			height: 44px;
+			line-height: 42px;
+			padding: 0 20px;
+			&:focus {
+				border: 1px solid $primaryLight;
+			}
+		}
+		input {
+			&[type=radio] {
+				@include roundedAll(50%);
+				padding: 0;
+				height: 20px;
+				width: 20px;
+				&:checked {
+					background: $primary;
+				}
+			}
+			&[type=checkbox] {
+				padding: 0;
+				height: 20px;
+				width: 20px;
+				&:checked {
+					background: $primary;
+				}
+			}
+			&[type=file] {
+				padding: 10px;
+				height: auto;
+				line-height: 1;
+			}
+		}
+		select {
+			appearance: auto;
+		}
+		button {
+			@extend .c-btn;
+			@extend .--primary;
+		}
+		.input-group {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+			* {
+				cursor: pointer;
+			}
+			label {
+				padding-left: 5px;
+				margin-right: 40px;
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
+		}
+		.input-wrapper {
+			margin-bottom: 20px;
+		}
+	}
+	form.form-login {
+		button {
+			margin-top: 20px;
+		}
+	}
+	form.form-cadastro {
+		button {
+			margin-bottom: 20px;
+		}
+		label.u-dflex {
+			cursor: pointer;
+			span {
+				padding-left: 5px;
+			}
+		}
+	}
+	form.recover-form {
+		button {
+			margin-bottom: 20px;
+		}
+	}
+	small, .recover-password, p {
+		@include paragrafos();
+		margin-top: 2px;
+		display: block;
+	}
+	.login-oauth {
+		margin-top: 40px;
+		padding-top: 40px;
+		border-top: 1px solid $primaryLight;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		.login-fb {
+			strong {
+				font-size: 20px;
+			}
+		}
+		* {
+			@include flexWidth(100%);
+			text-align: center;
+		}
 	}
 }
 

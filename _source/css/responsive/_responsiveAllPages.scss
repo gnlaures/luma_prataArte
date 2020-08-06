@@ -836,3 +836,19 @@
         display: block !important;
     }
 }
+
+// page__inner
+@media screen and (max-width: 800px) {
+    #page__inner .painel-box,
+    #page__inner .login-oauth {
+        @include flexWidth(100%);
+        form {
+            @include flexWidth(100%);
+            &.form-login {
+                margin-bottom: 40px;
+                padding-bottom: 40px;
+                border-bottom: 1px solid $primaryLight;
+            }
+        }
+    }
+}

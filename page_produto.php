@@ -624,7 +624,7 @@
 					<div class="priceCash"><span>Ou <strong>R$ 266,00 à vista</strong></span><span> com 5% de desconto.</span></div>
 				</div>
 				<div class="c-saleProduct__shopPair">
-					<button class="c-btn --primary --disabled">Compre o par</a>
+					<button class="c-btn --primary --disabled">Compre o par</button>
 					<div class="c-saleProduct__secure">
 						<i><img src="media/img/icons/icon_lock.svg" alt="Compra 100% Segura"></i>
 						<span>Compra 100% segura</span>

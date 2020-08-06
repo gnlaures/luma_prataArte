@@ -79,6 +79,31 @@
 			$title_page = 'Produto - '.$title;
 			break;
 
+		case 'sobre':
+			$file = 'page_sobre.php';
+			$title_page = 'Sobre - '.$title;
+			break;
+
+		case 'login':
+			$file = 'page_login.php';
+			$title_page = 'Login - '.$title;
+			break;
+
+		case 'cadastro':
+			$file = 'page_cadastro.php';
+			$title_page = 'Cadastro - '.$title;
+			break;
+
+		case 'carrinho':
+			$file = 'page_carrinho.php';
+			$title_page = 'Carrinho - '.$title;
+			break;
+
+		case 'termos':
+			$file = 'page_termos.php';
+			$title_page = 'Termos de Uso - '.$title;
+			break;
+
 		case '' :
 		case 'home' :
 		default :
