@@ -1980,7 +1980,7 @@ main {
 			margin-bottom: 20px;
 		}
 	}
-	small, .recover-password, p {
+	small, .recover-password, p, .empty span {
 		@include paragrafos();
 		margin-top: 2px;
 		display: block;
