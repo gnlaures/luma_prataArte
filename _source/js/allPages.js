@@ -189,6 +189,18 @@ if ($('.l-modal').length) {
 }
 
 // -> s-
+if ($('.s-cart').length) {
+    $('.list__remove').on('click', function() {
+        var confirmW = confirm("Deseja realmente remover este produto do carrinho?");
+        var thisElement = $(this);
+        if (confirmW == true) {
+            thisElement.closest('.list__item').addClass('is-removed');
+            setTimeout(function(){
+                thisElement.closest('.list__item').remove();
+            }, 1000);
+        }
+    })
+}
 if (('.s-suggestionsProduct').length) {
     var splide__products = new Splide('.splide__products', {
         perPage: 3,
