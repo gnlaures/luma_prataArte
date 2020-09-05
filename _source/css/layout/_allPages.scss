@@ -1199,8 +1199,6 @@ main {
 		flex: 1 1 auto;
 		display: flex;
 		position: static;
-		overflow-x: auto;
-		overflow-y: hidden;
 		> .c-subMenu {
 			border-right: 1px solid $white;
 			border-top: 1px solid $white;
@@ -1301,6 +1299,94 @@ main {
 		flex-wrap: nowrap;
 		flex-direction: row;
 		justify-content: space-between;
+		display: none;
+	}
+	
+	
+	// reset styles
+	// useless elements
+	.wd-facet-group .facets .facet-type .facet-type-list .facet-title::before {
+		display: none;
+	}
+	// main list
+	.wd-facet-group .facets {
+		@include roundedAll(0);
+		padding: 0;
+		width: 100%;
+		display: flex;
+		align-self: flex-start;
+		justify-content: flex-start;
+	}
+	// sub menu hero
+	.wd-facet-group .facets .facet-type .facet-type-list {
+		.facet-title {
+			border-top: 0;
+			padding: 0;
+		}
+	}
+	.range-wrapper {
+		background: red;
+		display: none;
+	}
+	.wd-facet-group .facets, .wd-facet-group .selected-facets {
+		background: transparent;
+		border: 0;
+	}
+	
+	// new style
+	.wd-facet-group .facets .facet-type {
+		position: relative;
+		overflow: inherit;
+	}
+	.wd-facet-group .facets .facet-type .facet-type-list .facet-title {
+		@include uppercaseSmallTexts();
+		padding: 10px;
+		cursor: pointer;
+		border-right: 1px solid $white;
+		&:hover {
+			background: $mutedGray;
+		}
+	}
+	.wd-facet-group .facets .facet-type .facet-type-list .facet-title + ul,
+	.wd-facet-group .facets .facet-type .facet-type-list .facet-title + .range-wrapper {
+		@include roundedAll(0);
+		display: block;
+		position: absolute;
+		border-top: 1px solid $white;
+		top: 32px;
+		left: 0;
+		z-index: 5;
+		background: $mutedGray;
+		width: 240px;
+		padding: 20px;
+		h4 {
+			a {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-between;
+				span {
+					@include uppercaseSmallTexts();
+				}
+				&:hover {
+					span {
+						color: $black;
+					}
+				}
+			}
+		}
+	}
+	.wd-facet-group .facets .facet-type .facet-type-list .facet-title + .range-wrapper {
+		margin: 0;
+		width: 470px;
+		padding-bottom: 35px;
+	}
+	.wd-facet-group .facets .facet-type .facet-type-list .facet-title.facet-closed + ul,
+	.wd-facet-group .facets .facet-type .facet-type-list .facet-title.facet-closed + .range-wrapper{
+		display: none;
+	}
+	.wd-facet-type-range .range2h .defined-range {
+		background: $primary;
 	}
 }
 .s-headResults {
@@ -2007,6 +2093,7 @@ main {
 		}
 	}
 }
+
 
 // #
 #page__produto {
