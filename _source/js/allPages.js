@@ -191,7 +191,6 @@ if ($('.l-modal').length) {
 // -> s-
 if ($('.s-filters').length) {
     $('.facet-title').addClass('facet-closed');
-
     $('.facet-title').on('click', function () {
         $('.facet-title').addClass('facet-closed');
         $(this).removeClass('facet-closed');
@@ -269,4 +268,9 @@ if ($('.s-suggestionsProduct').length) {
             }
         }
     }).mount();
+}
+if ($('.s-introProduct').length) {
+    $(window).on('load', function() {
+        $('.wd-buy-button-custom').appendTo('.c-saleProduct__partsContent');
+    })
 }

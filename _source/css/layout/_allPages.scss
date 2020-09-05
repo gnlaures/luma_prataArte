@@ -1590,10 +1590,88 @@ main {
 			@include flexWidth(500px);
 		}
 	}
-	
 	&.is-active {
 		.u-containerFlex {
 			max-width: 1240px;
+		}
+	}
+	
+	// adjusts vtex
+	.c-saleProduct__partsMenu {
+		display: none;
+	}
+	.c-saleProduct__close {
+		z-index: 5;
+		top: -15px;
+	}
+	.wd-buy-button-custom {
+		.wd-buy-button {
+			> div {
+				&:first-of-type {
+					display: none;
+				}
+			}
+		}
+		.bloco-par {
+			display: block;
+			margin-top: 0;
+			margin-bottom: 25px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid $mutedGray;
+			position: relative;
+			&:before {
+				@include uppercaseSmallTexts();
+				content: '1º Peça: ';
+				font-weight: $fwBold;
+				color: $black;
+				position: absolute;
+				top: -10px;
+				left: 0;
+			}
+			&:last-of-type {
+				border-bottom: 0;
+				padding-bottom: 0;
+				&:before {
+					content: '2º Peça: ';
+				}
+			}
+			.title {
+				@include uppercaseSmallTexts();
+			}
+			select {
+				appearance: menulist;
+				border: 1px solid $white;
+			}
+		}
+		.bloco-par-options {
+			li {
+				margin-top: 15px;
+				&:last-of-type {
+					margin-bottom: 15px;
+				}
+			}
+		}
+		.optionsHero {
+			.product-purchase{
+				display: flex;
+				align-items: center;
+				flex-direction: row;
+				margin-right: 25px;
+				&:last-of-type {
+					margin-right: 0;
+				}
+				label {
+					@include uppercaseSmallTexts();
+					padding-left: 5px;
+				}
+			}
+		}
+		.compre-par {
+			display: block;
+		}
+		button {
+			text-transform: uppercase;
+			cursor: pointer;
 		}
 	}
 }
