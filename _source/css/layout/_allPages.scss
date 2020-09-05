@@ -1365,6 +1365,9 @@ main {
 				flex-direction: row;
 				align-items: center;
 				justify-content: space-between;
+				.markup-color {
+					display: none;
+				}
 				span {
 					@include uppercaseSmallTexts();
 				}

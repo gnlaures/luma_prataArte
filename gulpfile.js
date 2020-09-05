@@ -38,7 +38,6 @@ var jsLibraries__files = [
     'libraries/forms/forms.min.js',
     'libraries/laures/lauresFunctions.js',
     'libraries/fancybox/jquery.fancybox.min.js',
-    'libraries/splide/splide.min.js',
     //'libraries/aos/aos.js',
     //'libraries/swiper/swiper.min.js',
 ];
