@@ -190,10 +190,18 @@ if ($('.l-modal').length) {
 
 // -> s-
 if ($('.s-filters').length) {
-    $('.facet-title').addClass('facet-closed');
-    $('.facet-title').on('click', function () {
+    $(window).on('load', function() {
         $('.facet-title').addClass('facet-closed');
-        $(this).removeClass('facet-closed');
+    });
+
+    $(document).on('click', '.facet-title', function () {
+        var thisEl = $(this);
+        if (thisEl.hasClass('facet-closed')) {
+            $('.facet-title').addClass('facet-closed');
+            thisEl.removeClass('facet-closed');
+        } else {
+            thisEl.addClass('facet-closed');
+        }
     })
 }
 if ($('.s-cart').length) {

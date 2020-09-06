@@ -227,8 +227,8 @@
 											<div class="min handler">
 												<div class="icon"></div>
 											</div>
-											<div class="defined-range" style="width: 424px; left: 0px;"></div>
-											<div class="max handler" style="left: 424px;">
+											<div class="defined-range" style="width: 50px; left: 0px;"></div>
+											<div class="max handler" style="left: 50px;">
 												<div class="icon"></div>
 											</div>
 										</div>            <!-- button class="submit">Filtrar</button -->        </div>

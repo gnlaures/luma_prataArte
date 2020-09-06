@@ -553,6 +553,24 @@
         &__end {
             display: none;
         }
+        
+        .wd-facet-group .facets .facet-type {
+            position: static;
+        }
+        .wd-facet-group .facets .facet-type .facet-type-list .facet-title+ul,
+        .wd-facet-group .facets .facet-type .facet-type-list .facet-title+.range-wrapper,
+        .wd-facet-group .facets,
+        .wd-facet-group {
+            width: 100%;
+        }
+        .facet-type {
+            margin: 0;
+        }
+        .s-filters__menu {
+            position: relative;
+            display: block;
+            width: 100%;
+        }
     }
 }
 @media screen and (max-width: 680px) {
